@@ -25,6 +25,9 @@ Route::get('Hola', function () {
 
 Route::get('Home', 'App\Http\Controllers\HomeController@mostrarHome');
 
+Route::get('genial', 'App\Http\Controllers\HomeController@mostrarGenial');
+
+
 /*
 Route::get('usuarios/{nombre}', function ($nombre) {
     return 'los usuarios ' . $nombre;
