@@ -1,3 +1,87 @@
+
+
+<!-- delivery area start  -->
+<div class="delivery-area">
+    <div class="container">
+        <div class="border-bottom padding-top-50 padding-bottom-80">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-delivery-02 border-top-0 d-flex justify-content-center p-0 margin-top-30">
+                        <div class="left">
+                            <i class="icon-delivery-car green-icon"></i>
+                        </div>
+                        <div class="right">
+                            <h6>REALIZAMOS ENVÍOS..</h6>
+                            <p>Envíos a todo Chile</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-delivery-02 border-top-0 d-flex justify-content-center p-0 margin-top-30">
+                        <div class="left">
+                            <i class="icon-money-back green-icon"></i>
+                        </div>
+                        <div class="right">
+                            <h6>GARANTÍA</h6>
+                            <p>5 días de garantía</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-delivery-02 border-top-0 d-flex justify-content-center p-0 margin-top-30">
+                        <div class="left">
+                            <i class="icon-phone-support green-icon"></i>
+                        </div>
+                        <div class="right">
+                            <h6>+56 9 8701 67 35</h6>
+                            <p>Soporte <br>
+                            Martes a domingo de 8:30 a 20:00 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- delivery area end  -->
+
+<!-- instagram start -->
+<div class="instagram-area margin-top-65">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title-02 margin-bottom-20 text-center">
+                    <h6>SÍGANOS</h6>
+                    <h3>#BANDSHOP INSTA</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="instagram-slider">
+                    <div class="thumb">
+                        {{Html::image("img/instagram/face1.jpg", "")}}
+                    </div>
+                    <div class="thumb">
+                        {{Html::image("img/instagram/face2.jpg", "")}}
+                    </div>
+                    <div class="thumb">
+                        {{Html::image("img/instagram/face3.jpg", "")}}
+                    </div>
+                    <div class="thumb">
+                        {{Html::image("img/instagram/4.png", "")}}
+                    </div>
+                    <div class="thumb">
+                        {{Html::image("img/instagram/5.png", "")}}
+                    </div>
+                    <div class="thumb">
+                        {{Html::image("img/instagram/6.png", "")}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <footer class="footer-area footer-style-1 padding-top-70 margin-top-70">
   <div class="footer-top padding-bottom-50">
       <div class="container">
@@ -97,6 +181,10 @@
           </div>
       </div>
   </div>
+
+
+
+
 </footer>
 <!-- footer area end -->
 

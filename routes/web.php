@@ -27,6 +27,9 @@ Route::get('Home', 'App\Http\Controllers\HomeController@mostrarHome');
 
 Route::get('genial', 'App\Http\Controllers\HomeController@mostrarGenial');
 
+Route::get('Productos', 'App\Http\Controllers\ProductosController@mostrarProductos');
+
+
 
 /*
 Route::get('usuarios/{nombre}', function ($nombre) {
@@ -58,4 +61,4 @@ Route::get('producto_nombre', function () {
 });*/
 
 
-Route::get('carritos', 'App\Http\Controllers\CarritoController@mostrarCompras');
+//Route::get('carritos', 'App\Http\Controllers\CarritoController@mostrarCompras');

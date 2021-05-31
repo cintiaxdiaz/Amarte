@@ -122,28 +122,28 @@
             <div class="row">
                 <div class="col-lg-3 col-4 order-1 align-self-center">
                     <div class="logo">
-                        <a href="index.html">{{Html::image("img/IDENTIDADAMARTE-06_opt.jpg", "")}}
+                        <a href="/Home">{{Html::image("img/IDENTIDADAMARTE-06_opt.jpg", "")}}
                     </div>
                 </div>
                 <div class="col-lg-6 order-3 order-lg-2">
                     <div class="collapse navbar-collapse" id="shop-menu">
                         <ul class="navbar-nav menu-open">
                             <li class="menu-item-has-children">
-                                <a href="#">Home <i class="fa fa-angle-down"></i></a>
+                                <!--<a href="#">Home <i class="fa fa-angle-down"></i></a>-->
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Home 01</a></li>
+                                    <!--<li><a href="index.html">Home 01</a></li>
                                     <li><a href="index-2.html">Home 02</a></li>
                                     <li><a href="index-3.html">Home 03</a></li>
                                     <li><a href="index-4.html">Home 04</a></li>
-                                    <li><a href="index-5.html">Home 05</a></li>
+                                    <li><a href="index-5.html">Home 05</a></li>-->
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">Shop <i class="fa fa-angle-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a href="collection.html">Shop Grid</a></li>
-                                    <li><a href="collection-list.html">Shop List</a></li>
-                                    <li><a href="collection-full.html">Shop Full</a></li>
+                                    <!--<li><a href="collection.html">Shop Grid</a></li>-->
+                                    <li><a href="Productos">Shop List</a></li>
+                                   <!-- <li><a href="collection-full.html">Shop Full</a></li>-->
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
