@@ -29,6 +29,7 @@ Route::get('genial', 'App\Http\Controllers\HomeController@mostrarGenial');
 
 Route::get('Productos', 'App\Http\Controllers\ProductosController@mostrarProductos');
 
+Route::get('singleProducto/{id}', 'App\Http\Controllers\ProductosController@mostrarsingleProducto');
 
 
 /*

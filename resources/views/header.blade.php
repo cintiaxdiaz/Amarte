@@ -142,7 +142,7 @@
                                 <a href="#">Shop <i class="fa fa-angle-down"></i></a>
                                 <ul class="sub-menu">
                                     <!--<li><a href="collection.html">Shop Grid</a></li>-->
-                                    <li><a href="Productos">Shop List</a></li>
+                                    <li><a href="/Productos">Shop List</a></li>
                                    <!-- <li><a href="collection-full.html">Shop Full</a></li>-->
                                 </ul>
                             </li>

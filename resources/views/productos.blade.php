@@ -57,14 +57,18 @@
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="product-style-03 margin-top-40">
                                         <div class="thumb">
-                                            {{Html::image("img/productos/" . $producto->fotos[0]->url_foto, "")}}
+                                            <a href="/singleProducto/{{$producto->id}}">
+                                                {{Html::image("img/productos/" . $producto->fotos[0]->url_foto, "")}}
+                                            </a>
 
                                             <ul class="cart-action">
                                                 <li><a href="#"><i class="icon-add-to-cat"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="content text-center">
+                                            
                                             <span class="brand">{{$producto->descripcion}}</span>
+                                        
                                             <ul class="justify-content-center margin-bottom-20">
                                                 <li><a href="#"><i class="fa fa-star"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -72,7 +76,7 @@
                                                 <li><a href="#"><i class="fa fa-star"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                             </ul>
-                                            <h6 class="title"><a href="#"> {{$producto->nombre}}</a></h6>
+                                            <h6 class="title"><a href="/singleProducto/{{$producto->id}}"> {{$producto->nombre}}</a></h6>
                                             <div class="content-price d-flex align-self-center justify-content-center">
                                                 <span class="new-price">{{$producto->precio}}</span>
                                             </div>
@@ -116,12 +120,15 @@
 
                                 <div class="col-md-4 col-sm-12 col-12">
                                     <div class="thumb">
+                                        <a href="/singleProducto/{{$producto->id}}">
+
                                         {{Html::image("img/productos/" . $producto->fotos[0]->url_foto, "")}}
+                                        <
                                     </div>                                        
                                     </div>
                                     <div class="col-md-8 col-sm-12 col-12">
                                     <div class="content">
-                                        <h6 class="title"><a href="#">{{$producto->nombre}}</a></h6>
+                                        <h6 class="title"><a href="/singleProducto/{{$producto->id}}">{{$producto->nombre}}</a></h6>
                                         <div class="content-price d-flex align-self-center">
                                             <span class="new-price">{{$producto->precio}}</span>
                                         </div>
