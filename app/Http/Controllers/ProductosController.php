@@ -17,4 +17,11 @@ class ProductosController extends Controller
 
         return view('productos', compact('productos'));
     }
+
+    public function mostrarsingleProducto($id)
+    {
+        $producto = Producto::find(intval($id));
+
+        return view('singleProducto', compact('producto'));
+    }
 }
