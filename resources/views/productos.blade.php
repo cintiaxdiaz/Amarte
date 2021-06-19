@@ -141,10 +141,9 @@
                                         </ul>
                                         <p>{{$producto->descripcion}}</p>
                                         <div class="btn-wrapper margin-top-20">
-                                            <div class="add-to-cart">
-                                                <a href="#"><i class="icon-add-to-cat"></i> Add to cart</a>
+                                            <div class="add-to-cart my-cart-btn" data-id="{{$producto->id}}" data-name="{{$producto->nombre}}" data-summary="{{$producto->descripcion}}" data-price="{{$producto->precio}}" data-quantity="1" data-image='/img/productos/{{$producto->fotos[0]->url_foto}}'>
+                                                <a href="javascript:void(0)"><i class="icon-add-to-cat"></i> Add to cart</a>
                                             </div>
-                                            
                                         </div>
                                     </div>
                                 </div>

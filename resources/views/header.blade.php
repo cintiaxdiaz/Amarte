@@ -173,79 +173,18 @@
                                 <a href="#"><i class="icon-heart"></i><span class="badge badge-green">2</span></a>
                             </li>
                             <li class="has-dropdown">
-                                <a href="#"><i class="icon-add-to-cat"></i><span class="badge badge-green">3</span></a>
-                                <ul>
-                                    <li>
-                                        <div class="d-flex">
-                                            <div class="thumb">
-                                                {{Html::image("img/shop/c1.png", "")}}
+                                <a href="#"><i class="icon-add-to-cat"></i><span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></a>
+                                <form action="/carrito" method="POST">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                                    <ul id="my-cart-checkout-id">
+                                        <li>
+                                            <h6 class="tprice"><span>Total price: </span>$3210.00</h6>
+                                            <div class="btn-wrapper">
+                                                <input type="submit" class="btn btn-cart" value="Go to cart">
                                             </div>
-                                            <div class="content">
-                                                <h6 class="title"><a href="single-product.html">Comfortable chair in
-                                                        the scandinavian</a></h6>
-                                                <span class="price">$29.00</span>
-                                            </div>
-                                            <div class="action">
-                                                <input type="number" value="1">
-                                                <a href="#" class="remove">Remove</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex">
-                                            <div class="thumb">
-                                                {{Html::image("img/shop/c2.png", "")}}
-                                            </div>
-                                            <div class="content">
-                                                <h6 class="title"><a href="single-product.html">Comfortable chair in
-                                                        the scandinavian</a></h6>
-                                                <span class="price">$29.00</span>
-                                            </div>
-                                            <div class="action">
-                                                <input type="number" value="1">
-                                                <a href="#" class="remove">Remove</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex">
-                                            <div class="thumb">
-                                                {{Html::image("img/shop/c3.png", "")}}
-                                            </div>
-                                            <div class="content">
-                                                <h6 class="title"><a href="single-product.html">Comfortable chair in
-                                                        the scandinavian</a></h6>
-                                                <span class="price">$29.00</span>
-                                            </div>
-                                            <div class="action">
-                                                <input type="number" value="1">
-                                                <a href="#" class="remove">Remove</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex">
-                                            <div class="thumb">
-                                                {{Html::image("img/shop/c4.png", "")}}
-                                            </div>
-                                            <div class="content">
-                                                <h6 class="title"><a href="single-product.html">Comfortable chair in
-                                                        the scandinavian</a></h6>
-                                                <span class="price">$29.00</span>
-                                            </div>
-                                            <div class="action">
-                                                <input type="number" value="1">
-                                                <a href="#" class="remove">Remove</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <h6 class="tprice"><span>Total price: </span>$3210.00</h6>
-                                        <div class="btn-wrapper">
-                                            <a href="shoping-cart.html" class="btn btn-cart">Go to cart</a>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </form>
                             </li>
                         </ul>
                     </div>

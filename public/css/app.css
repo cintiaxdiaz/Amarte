@@ -67,9 +67,23 @@ background:#ff0b91;
 }
 .product-style-04 .content .title{
     color:#BC01A6;
-
 }
 .product-style-04 .clockdiv > div > span{
-    color:#ff0b91
+    color:#ff0b91;
+}
 
+.nav-right-part ul li a span.badge {
+    background-color:#ff0b91;
+}
+
+.cart-content {
+    width: 176px;
+}
+
+.nav-right-part ul .has-dropdown ul input {
+    width: auto;
+}
+
+.nav-right-part ul .has-dropdown ul input.my-product-quantity {
+    width: 60px;
 }

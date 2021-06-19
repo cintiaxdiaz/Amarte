@@ -31,6 +31,7 @@ Route::get('Productos', 'App\Http\Controllers\ProductosController@mostrarProduct
 
 Route::get('singleProducto/{id}', 'App\Http\Controllers\ProductosController@mostrarsingleProducto');
 
+Route::post('carrito', 'App\Http\Controllers\CarritoController@mostrarCarrito');
 
 /*
 Route::get('usuarios/{nombre}', function ($nombre) {

@@ -7,9 +7,8 @@ use App\Models\Producto;
 
 class CarritoController extends Controller
 {
-    public function mostrarCompras()
+    public function mostrarCarrito(Request $request)
     {
-        $compras = Producto::all();
-        return view('carrito', compact('compras'));
+        return $request->all();
     }
 }
