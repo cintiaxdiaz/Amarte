@@ -60,22 +60,22 @@
             <div class="col-md-12">
                 <div class="instagram-slider">
                     <div class="thumb">
-                        {{Html::image("img/instagram/face1.jpg", "")}}
+                        {{Html::image("/img/instagram/face1.jpg", "")}}
                     </div>
                     <div class="thumb">
-                        {{Html::image("img/instagram/face2.jpg", "")}}
+                        {{Html::image("/img/instagram/face2.jpg", "")}}
                     </div>
                     <div class="thumb">
-                        {{Html::image("img/instagram/face3.jpg", "")}}
+                        {{Html::image("/img/instagram/face3.jpg", "")}}
                     </div>
                     <div class="thumb">
-                        {{Html::image("img/instagram/4.png", "")}}
+                        {{Html::image("/img/instagram/4.png", "")}}
                     </div>
                     <div class="thumb">
-                        {{Html::image("img/instagram/5.png", "")}}
+                        {{Html::image("/img/instagram/5.png", "")}}
                     </div>
                     <div class="thumb">
-                        {{Html::image("img/instagram/6.png", "")}}
+                        {{Html::image("/img/instagram/6.png", "")}}
                     </div>
                 </div>
             </div>
@@ -170,12 +170,12 @@
               </div>
               <div class="col-md-6">
                   <ul>
-                      <li><a href="#">{{Html::image("img/payment/1.png", "")}}</a></li>
-                      <li><a href="#">{{Html::image("img/payment/2.png", "")}}</a></li>
-                      <li><a href="#">{{Html::image("img/payment/3.png", "")}}</a></li>
-                      <li><a href="#">{{Html::image("img/payment/4.png", "")}}</a></li>
-                      <li><a href="#">{{Html::image("img/payment/5.png", "")}}</a></li>
-                      <li><a href="#">{{Html::image("img/payment/6.png", "")}}</a></li>
+                      <li><a href="#">{{Html::image("/img/payment/1.png", "")}}</a></li>
+                      <li><a href="#">{{Html::image("/img/payment/2.png", "")}}</a></li>
+                      <li><a href="#">{{Html::image("/img/payment/3.png", "")}}</a></li>
+                      <li><a href="#">{{Html::image("/img/payment/4.png", "")}}</a></li>
+                      <li><a href="#">{{Html::image("/img/payment/5.png", "")}}</a></li>
+                      <li><a href="#">{{Html::image("/img/payment/6.png", "")}}</a></li>
                   </ul>
               </div>
           </div>

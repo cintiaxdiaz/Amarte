@@ -26,7 +26,7 @@
     <button class="sidebar-menu-close">X</button>
     <div class="sidebar-inner">
         <div class="sidebar-logo">
-            {{Html::image("img/logo.png", "")}}
+            {{Html::image("/img/logo.png", "")}}
         </div>
         <div class="sidemenu-text">
             <p>We believe brand interaction is key in commu- nication. Real inno vations and a positive customer
@@ -122,7 +122,7 @@
             <div class="row">
                 <div class="col-lg-3 col-4 order-1 align-self-center">
                     <div class="logo">
-                        <a href="/Home">{{Html::image("img/IDENTIDADAMARTE-06_opt.jpg", "")}}
+                        <a href="Home/">{{Html::image("/img/IDENTIDADAMARTE-06_opt.jpg", "")}}
                     </div>
                 </div>
                 <div class="col-lg-6 order-3 order-lg-2">

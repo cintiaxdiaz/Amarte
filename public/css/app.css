@@ -76,7 +76,7 @@ background:#ff0b91;
     background-color:#ff0b91;
 }
 
-.cart-content {
+.cart-content.cart-content-header {
     width: 176px;
 }
 
@@ -86,4 +86,70 @@ background:#ff0b91;
 
 .nav-right-part ul .has-dropdown ul input.my-product-quantity {
     width: 60px;
+}
+
+/*SINGLE PRODUCTS*/
+
+.collection-area .content-part .product-title {
+     color:#BC01A6;
+     font-size: 42px;
+   
+}
+.collection-area .content-part .price {
+    font-size: 32px;
+    color:#BC01A6;
+
+}
+.collection-area .content-part .specifications b{
+
+    color:#BC01A6;
+
+}
+
+.collection-area .content-part .add-to-cart{
+ 
+    color:aliceblue
+}
+.collection-area .content-part .add-to-cart{
+
+    background: #ff0b91;
+}
+.collection-area .product-tab .nav-pills li a.active {
+    border-color: #BC01A6;
+    color: #BC01A6;
+}
+h1, h2, h3, h4, h5, h6 {
+    color:#BC01A6;
+
+}
+
+.checkout-widget h4{
+    color:#BC01A6;
+
+}
+/* margen de estrellas*/
+.collection-area .content-part .rating i{
+    margin-bottom: 20px;
+}
+/* comprar ahora botton*/
+.collection-area .content-part .btn-buy {
+    border: 1px solid #BC01A6;
+}
+/* carrito*/
+.cart-content .left img{
+    width: 120px;
+}
+
+.cart-content .btn-continue{
+    background:#ff0b91;
+}
+.summary .total{
+    background:#ff0b91;
+
+}
+.summary .btn-checkout {
+    background:#ff0b91;
+}
+.summary label{
+    color:#BC01A6;
 }

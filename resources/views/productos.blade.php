@@ -9,11 +9,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="breadcrumb-inner d-flex justify-content-between">
-                        <h2 class="page-title">Shop</h2>
+                        <h2 class="page-title">MODA MUJER</h2>
                         <ul class="page-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="#">Women</a></li>
+                            <li><a href="/Home">Home</a></li>
+                            <li><a href="/Productos">Compra</a></li>
                         </ul>
                     </div>
                 </div>
@@ -30,8 +29,8 @@
                     <div class="row">
                         <div class="col-lg-8 col-5">
                             <ul class="nav nav-pills shop-tab">
-                                <li><a data-toggle="pill" href="#one"><i class="fa fa-th-large"></i></a></li>
-                                <li><a class="active" data-toggle="pill" href="#two"><i class="fa fa-bars"></i></a></li>
+                                <li><a class="active" data-toggle="pill" href="#one"><i class="fa fa-th-large"></i></a></li>
+                                <li><a data-toggle="pill" href="#two"><i class="fa fa-bars"></i></a></li>
                             </ul>
                         </div>
                         <div class="col-lg-4 col-7">
@@ -50,7 +49,7 @@
                     </div>
                     <!--lista  de productos-->
                     <div class="tab-content">
-                        <div class="tab-pane fade" id="one">
+                        <div class="tab-pane fade in show active" id="one">
                             <div class="row">
                                 @foreach($productos as $producto)
 
@@ -58,7 +57,7 @@
                                     <div class="product-style-03 margin-top-40">
                                         <div class="thumb">
                                             <a href="/singleProducto/{{$producto->id}}">
-                                                {{Html::image("img/productos/" . $producto->fotos[0]->url_foto, "")}}
+                                                {{Html::image("/img/productos/" . $producto->fotos[0]->url_foto, "")}}
                                             </a>
 
                                             <ul class="cart-action">
@@ -84,37 +83,10 @@
                                     </div>
                                 </div>
                                 @endforeach
-                                <!--
-                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="product-style-03 margin-top-40">
-                                        <div class="thumb">
-                                            <img src="assets/img/shop/1.png" alt="">
-                                            <ul class="cart-action">
-                                                <li><a href="#"><i class="icon-add-to-cat"></i></a></li>
-                                                <li><a href="#"><i class="icon-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="content text-center">
-                                            <span class="brand">Brand: geek</span>
-                                            <ul class="justify-content-center margin-bottom-20">
-                                                <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                            </ul>
-                                            <h6 class="title"><a href="#">Faxon Canvas Low-Top Sneaker</a></h6>
-                                            <div class="content-price d-flex align-self-center justify-content-center">
-                                                <span class="new-price">$450.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             
-                            -->
                             </div>
                         </div>
-                        <div class="tab-pane fade in show active list-item" id="two">
+                        <div class="tab-pane fade list-item" id="two">
                             @foreach($productos as $producto)
                             <div class="row product-style-03 margin-top-40">
 
@@ -122,8 +94,8 @@
                                     <div class="thumb">
                                         <a href="/singleProducto/{{$producto->id}}">
 
-                                        {{Html::image("img/productos/" . $producto->fotos[0]->url_foto, "")}}
-                                        <
+                                        {{Html::image("/img/productos/" . $producto->fotos[0]->url_foto, "")}}
+                                        
                                     </div>                                        
                                     </div>
                                     <div class="col-md-8 col-sm-12 col-12">
@@ -142,7 +114,7 @@
                                         <p>{{$producto->descripcion}}</p>
                                         <div class="btn-wrapper margin-top-20">
                                             <div class="add-to-cart my-cart-btn" data-id="{{$producto->id}}" data-name="{{$producto->nombre}}" data-summary="{{$producto->descripcion}}" data-price="{{$producto->precio}}" data-quantity="1" data-image='/img/productos/{{$producto->fotos[0]->url_foto}}'>
-                                                <a href="javascript:void(0)"><i class="icon-add-to-cat"></i> Add to cart</a>
+                                                <a href="javascript:void(0)"><i class="icon-add-to-cat"></i> AGREGAR AL CARRO</a>
                                             </div>
                                         </div>
                                     </div>
@@ -151,42 +123,9 @@
 
                             @endforeach
 
-                            <!--
-                            <div class="row product-style-03 margin-top-40">
-                                <div class="col-md-4 col-sm-12 col-12">
-                                    <div class="thumb">
-                                        <img src="assets/img/shop/2.png" alt="">
-                                    </div>                                        
-                                </div>
-                                <div class="col-md-8 col-sm-12 col-12">
-                                    <div class="content">
-                                        <h6 class="title"><a href="#">Faxon Canvas Low-Top Sneaker</a></h6>
-                                        <div class="content-price d-flex align-self-center">
-                                            <span class="new-price">$450.00</span>
-                                        </div>
-                                        <ul class="margin-bottom-10">
-                                            <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                        </ul>
-                                        <p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                        <div class="btn-wrapper margin-top-20">
-                                            <div class="add-to-cart">
-                                                <a href="#"><i class="icon-add-to-cat"></i> Add to cart</a>
-                                            </div>
-                                            <div class="add-to-wishlist">
-                                                <a href="#"><i class="icon-heart"></i> Add to Wishlist</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        -->
                         </div>
                     </div>
-                    <!-- numero de paginas!-->
+                    <!-- numero de paginas!
                     <div class="row">
                         <div class="col-md-12">
                             <div class="d-flex justify-content-between pagination">
@@ -198,7 +137,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12 margin-top-20">
                     <div class="widget search-widget">
@@ -213,7 +152,7 @@
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <p class="mb-0">
-                                        <a href="#" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Categories</a>
+                                        <a href="#" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Categoría</a>
                                     </p>
                                 </div>
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample1">
@@ -265,112 +204,22 @@
                             </div>
                         </div>
                     </div>
-                    <!-- MENU MARCAS-->
-                    <div class="widget brand-widget">
-                        <div class="accordion-style-2" id="accordionExample2">
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <p class="mb-0">
-                                        <a href="#" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Product Brand</a>
-                                    </p>
-                                </div>
-                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample2">
-                                    <div class="card-body">
-                                        <form action="#">
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck">Geek [124]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck2">Bags [293]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck3">Boots [125]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck4">Name [698]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck5">Dresses [12456]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck6">Flats [2654]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck7">Heels [29]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck8">Jackets [1136]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck9">Jeans [2987]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="pcustomCheck10">Jewellery [536]</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--TIPO DE PRODUCTO-->
-                    <div class="widget ptype-widget">
-                        <div class="accordion-style-2" id="accordionExample3">
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <p class="mb-0">
-                                        <a href="#" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Product Type</a>
-                                    </p>
-                                </div>
-                                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample3">
-                                    <div class="card-body">
-                                        <form action="#">
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="tcustomCheck9">Boys [203]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="tcustomCheck10">Girls [87]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="tcustomCheck11">Men [2869]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="tcustomCheck12">Women [1387]</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
+                    
                     <!--CATEGORIA DE PRECIOS-->
                     <div class="widget price-widget">
                         <div class="accordion-style-2" id="accordionExample4">
                             <div class="card">
                                 <div class="card-header" id="headingFour">
                                     <p class="mb-0">
-                                        <a href="#" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Filter by price</a>
+                                        <a href="#" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Filtro de precio</a>
                                     </p>
                                 </div>
                                 <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample4">
                                     <div class="price_filter">
                                         <div class="price_slider_amount">
-                                            <input type="submit"  value="Price:"/> 
-                                            <input type="text" id="amount" name="price" /> 
+                                            <input type="submit"  value="Precio:"/> 
+                                            <input type="text" id="amount" name="precio" /> 
                                         </div>
                                         <div id="slider-range"></div>
                                     </div>
@@ -378,86 +227,36 @@
                             </div>
                         </div>
                     </div>
-                    <!--CATEGORIA COLOR -->
-                    <div class="widget color-widget">
-                        <div class="accordion-style-2" id="accordionExample5">
-                            <div class="card">
-                                <div class="card-header" id="headingFive">
-                                    <p class="mb-0">
-                                        <a href="#" role="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Color</a>
-                                    </p>
-                                </div>
-                                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample5">
-                                    <ul class="color-list">
-                                        <li title="Blue"><a href="#"></a></li>
-                                        <li title="Black"><a href="#"></a></li>
-                                        <li title="Color"><a href="#"></a></li>
-                                        <li title="Color"><a href="#"></a></li>
-                                        <li title="Color"><a href="#"></a></li>
-                                        <li title="Color"><a href="#"></a></li>
-                                        <li title="Color"><a href="#"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--CATEGORIA DE TALLAS-->
-                    <div class="widget size-widget">
-                        <div class="accordion-style-2" id="accordionExample6">
-                            <div class="card">
-                                <div class="card-header" id="headingSix">
-                                    <p class="mb-0">
-                                        <a href="#" role="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Size</a>
-                                    </p>
-                                </div>
-                                <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample6">
-                                    <div class="card-body">
-                                        <ul class="size-list">
-                                            <li><a href="#">38</a></li>
-                                            <li><a href="#">39</a></li>
-                                            <li><a href="#">40</a></li>
-                                            <li><a href="#">41</a></li>
-                                            <li><a href="#">42</a></li>
-                                            <li><a href="#">43</a></li>
-                                            <li><a href="#">S</a></li>
-                                            <li><a href="#">M</a></li>
-                                            <li><a href="#">X</a></li>
-                                            <li><a href="#">XL</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <!--LO MAS VENDIDO-->
                     <div class="widget seller-widget">
-                        <h4 class="widget-title">Best sellers</h4>
+                        <h4 class="widget-title">Lo más vendido!!</h4>
                         <div class="seller-content">
                             <div class="single-seller-content d-flex">
                                 <div class="thumb">
-                                    <img src="assets/img/seller/1.png" alt="">
+                                    <a href="/singleProducto/AGREGAAAAAAARRRRRR URL">{{Html::image("/img/seller/top-modelo.jpg")}}
+
                                 </div>
                                 <div class="content">
-                                    <h6>Men's Crew T-shirt</h6>
-                                    <span>$35.00</span>
+                                    <h6>Mujer Crop-top</h6>
                                 </div>
                             </div>
                             <div class="single-seller-content d-flex">
                                 <div class="thumb">
-                                    <img src="assets/img/seller/2.png" alt="">
+                                    <a href="/singleProducto/AGREGAAAAAAARRRRRR URL">{{Html::image("/img/seller/outfit.jpg")}}
+
                                 </div>
                                 <div class="content">
-                                    <h6>Men's V-neck Pima</h6>
-                                    <span>$35.00</span>
+                                    <h6>Mujer V-crop</h6>
+                                    
                                 </div>
                             </div>
                             <div class="single-seller-content d-flex">
                                 <div class="thumb">
-                                    <img src="assets/img/seller/3.png" alt="">
+                                    {{Html::image("/img/seller/top-sale.jpg")}}
                                 </div>
                                 <div class="content">
-                                    <h6>Men's Crew T-shirt</h6>
-                                    <span>$35.00</span>
+                                    <h6>Mujer Cuadros</h6>
                                 </div>
                             </div>
                         </div>

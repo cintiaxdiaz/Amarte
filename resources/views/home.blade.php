@@ -7,7 +7,7 @@
         <div>
             <!--portada principal -->
             <div class="banner__bg2 d-flex align-items-center justify-content-center text-center"
-                style="background: url('img/portada-1.jpg') no-repeat center center/cover">
+                style="background: url('/img/portada-1.jpg') no-repeat center center/cover">
                 
                 <!--portada principal -->
                 <div class="container-fluid px-5">
@@ -26,7 +26,7 @@
 
         <div>
             <div class="banner__bg2 d-flex align-items-center justify-content-center text-center"
-                style="background: url('img/portada2.jpg') no-repeat center center/cover">
+                style="background: url('/img/portada2.jpg') no-repeat center center/cover">
                 <div class="container-fluid px-5">
                     <div class="banner-content">
                         <h3 class="subtitle" data-animation-in="fadeInLeft">30% OFF</h3>
@@ -53,7 +53,7 @@
                 <div class="collection-style-02 margin-top-20">
                     <div class="thumb">
 
-                        {{Html::image("img/collection/portada-women.jpg", "")}}
+                        {{Html::image("/img/collection/portada-women.jpg", "")}}
 
                         <div class="content">
                             <h3>WOMEN'S</h3>
@@ -68,7 +68,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="collection-style-02 margin-top-20">
                     <div class="thumb">
-                        {{Html::image("img/collection/portada-accessories.jpg", "")}}
+                        {{Html::image("/img/collection/portada-accessories.jpg", "")}}
                         <div class="content">
                             <h3>ACCESSORIES</h3>
                             <h6>Collection</h6>
@@ -82,7 +82,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="collection-style-02 margin-top-20">
                     <div class="thumb">
-                        {{Html::image("img/collection/portada!!.jpg", "")}}<!--Portada mens -->
+                        {{Html::image("/img/collection/portada!!.jpg", "")}}<!--Portada mens -->
                         <div class="content">
                             <h3>CURSOS</h3>
                             <h6>Collection</h6>
@@ -128,7 +128,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-style-02 margin-top-40">
                             <div class="thumb">
-                                {{Html::image("img/tranding/portada-new.png", "")}}
+                                {{Html::image("/img/tranding/portada-new.png", "")}}
                                 <span class="new">NEW</span>
 
 
@@ -162,7 +162,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-style-02 margin-top-40">
                             <div class="thumb">
-                                {{Html::image("img/tranding/cartera-new-portada.png", "")}}
+                                {{Html::image("/img/tranding/cartera-new-portada.png", "")}}
                                 <span class="new">NEW</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
@@ -194,7 +194,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-style-02 margin-top-40">
                             <div class="thumb">
-                                {{Html::image("img/tranding/conjuntotejido.png", "")}}
+                                {{Html::image("/img/tranding/conjuntotejido.png", "")}}
                                 <span class="sale">SALE! 13%</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
@@ -226,7 +226,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-style-02 margin-top-40">
                             <div class="thumb">
-                                {{Html::image("img/tranding/croptop-sirena.jpg", "")}}
+                                {{Html::image("/img/tranding/croptop-sirena.jpg", "")}}
                                 <span class="out">SOLD OUT</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
@@ -258,7 +258,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-style-02 margin-top-40">
                             <div class="thumb">
-                                {{Html::image("img/tranding/cartera-redonda-flecos.jpg", "")}}
+                                {{Html::image("/img/tranding/cartera-redonda-flecos.jpg", "")}}
                                 <span class="sale">SALE 13%</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
@@ -290,7 +290,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-style-02 margin-top-40">
                             <div class="thumb">
-                                {{Html::image("img/tranding/top-crazy.jpg", "")}}
+                                {{Html::image("/img/tranding/top-crazy.jpg", "")}}
                                 <span class="sale">SALE 13%</span>
                                 <span class="new margin-top-35">NEW</span>
                                 <ul class="cart-action-02">
@@ -321,404 +321,11 @@
                         </div>
                     </div>
                 </div>
-            </div><!--
-            <div class="tab-pane fade" id="two">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/4.png", "")}}
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Viscose-Cashmere Scarf</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/5.png", "")}}
-                                <span class="new">NEW</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Round neck sweater</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/6.png", "")}}
-                                <span class="sale">SALE! 13%</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Viscose-Cashmere Scarf</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/1.png", "")}}
-                                <span class="out">SOLD OUT</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Faxon Canvas Low-Top Sneaker</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/2.png", "")}}
-                                <span class="sale">SALE 13%</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">FPlaid Cotton Oxford Shirt</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/3.png", "")}}
-                                <span class="sale">SALE 13%</span>
-                                <span class="new margin-top-35">NEW</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Two-Tone Sleeveless Dress</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="three">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/6.png", "")}}
-                                <span class="sale">SALE! 13%</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Viscose-Cashmere Scarf</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/3.png", "")}}
-                                <span class="sale">SALE 13%</span>
-                                <span class="new margin-top-35">NEW</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Two-Tone Sleeveless Dress</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/1.png", "")}}
-                                <span class="out">SOLD OUT</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Faxon Canvas Low-Top Sneaker</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/2.png", "")}}
-                                <span class="sale">SALE 13%</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">FPlaid Cotton Oxford Shirt</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/4.png", "")}}
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Viscose-Cashmere Scarf</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-                    <!--
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-02 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/tranding/5.png", "")}}
-                                <span class="new">NEW</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <span class="brand">BRAND:GEEK</span>
-                                <ul class="justify-content-start margin-bottom-10">
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                </ul>
-                                <h6 class="title"><a href="#">Round neck sweater</a></h6>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="old-price">$400.00</span>
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-</div>-->
-<!-- tranding area end  -->
+</div>
+<!--  end  -->
 
 <!-- collection section start  -->
 <div class="collection-section margin-top-60">
@@ -728,7 +335,7 @@
                 <div class="collection-slider-02">
                     <div class="collection-slider-item margin-top-20">
                         <div class="thumb">
-                            {{Html::image("img/collection/top-sale.jpg", "")}}
+                            {{Html::image("/img/collection/top-sale.jpg", "")}}
                             <div class="thumb-content">
                                 <h4>MENS COLLECTION</h4>
                                 <h2>SALE</h2>
@@ -741,7 +348,7 @@
                     </div>
                     <div class="collection-slider-item margin-top-20">
                         <div class="thumb">
-                            {{Html::image("img/collection/trajes-sale.jpg", "")}}
+                            {{Html::image("/img/collection/trajes-sale.jpg", "")}}
                             <div class="thumb-content">
                                 <h4>TOP TENDING</h4>
                                 <h2>40%</h2>
@@ -754,7 +361,7 @@
                     </div>
                     <div class="collection-slider-item margin-top-20">
                         <div class="thumb">
-                            {{Html::image("img/collection/13.png", "")}}
+                            {{Html::image("/img/collection/13.png", "")}}
                             <div class="thumb-content">
                                 <h4>MENS COLLECTION</h4>
                                 <h2>SALE</h2>
@@ -767,7 +374,7 @@
                     </div>
                     <div class="collection-slider-item margin-top-20">
                         <div class="thumb">
-                            {{Html::image("img/collection/14.png", "")}}
+                            {{Html::image("/img/collection/14.png", "")}}
                             <div class="thumb-content">
                                 <h4>TOP TENDING</h4>
                                 <h2>40%</h2>
@@ -812,7 +419,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-style-04 margin-top-40">
                             <div class="thumb">
-                                {{Html::image("img/arrival/Crochet-top.jpg", "")}}
+                                {{Html::image("/img/arrival/Crochet-top.jpg", "")}}
                                 <span class="out">SOLD OUT</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
@@ -837,7 +444,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-style-04 margin-top-40">
                             <div class="thumb">
-                                {{Html::image("img/arrival/crop-gris.jpg", "")}}
+                                {{Html::image("/img/arrival/crop-gris.jpg", "")}}
                                 <span class="sale">SALE 13%</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
@@ -862,7 +469,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="product-style-04 margin-top-40">
                             <div class="thumb">
-                                {{Html::image("img/arrival/crop-chispa.jpg", "")}}
+                                {{Html::image("/img/arrival/crop-chispa.jpg", "")}}
                                 <span class="sale">SALE 13%</span>
                                 <span class="new margin-top-35">NEW</span>
                                 <ul class="cart-action-02">
@@ -887,181 +494,13 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="best">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-04 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/arrival/1.png", "")}}
-                                <span class="out">SOLD OUT</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <h6 class="title"><a href="#">Faxon Canvas Low-Top Sneaker</a></h6>
-                                <div class="product-countdown clockdiv" data-countdown="2021/02/02">
-                                </div>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-04 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/arrival/3.png", "")}}
-                                <span class="out">SOLD OUT</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <h6 class="title"><a href="#">Plaid Cotton Oxford Shirt</a></h6>
-                                <div class="product-countdown clockdiv" data-countdown="2021/02/02">
-                                </div>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-04 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/arrival/13.png", "")}}
-                                <span class="out">SOLD OUT</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <h6 class="title"><a href="#">Two-Tone Sleeveless Dress</a></h6>
-                                <div class="product-countdown clockdiv" data-countdown="2021/02/02">
-                                </div>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="sale">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-04 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/arrival/8.png", "")}}
-                                <span class="out">SOLD OUT</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <h6 class="title"><a href="#">Faxon Canvas Low-Top Sneaker</a></h6>
-                                <div class="product-countdown clockdiv" data-countdown="2021/02/02">
-                                </div>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-04 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/arrival/2.png", "")}}
-                                <span class="out">SOLD OUT</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <h6 class="title"><a href="#">Plaid Cotton Oxford Shirt</a></h6>
-                                <div class="product-countdown clockdiv" data-countdown="2021/02/02">
-                                </div>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-04 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("img/arrival/13.png", "")}}
-                                <span class="out">SOLD OUT</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <h6 class="title"><a href="#">Two-Tone Sleeveless Dress</a></h6>
-                                <div class="product-countdown clockdiv" data-countdown="2021/02/02">
-                                </div>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="new-price">$450.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            
         </div>
     </div>
 </div>
 <!-- arrivals area end  -->
 
-<div class="video-area margin-top-80 margin-bottom-75">
-    <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-md-12">
-                <div class="video-content"
-                    style="background: url('img/others/video.png') no-repeat center center/cover">
-                    <a href="#" class="video-btn-style-02"><i class="fa fa-play"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- article area start  -->
 <div class="article-area">
@@ -1078,7 +517,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="article-style-01">
                     <div class="thumb">
-                        {{Html::image("img/blog/aprender.jpg", "")}}
+                        {{Html::image("/img/blog/aprender.jpg", "")}}
                         <span class="tag tag-green">MODAL</span>
                     </div>
                     <div class="content">
@@ -1096,7 +535,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="article-style-01">
                     <div class="thumb">
-                        {{Html::image("img/blog/outfit.jpg", "")}}
+                        {{Html::image("/img/blog/outfit.jpg", "")}}
                         <span class="tag tag-green">LIFESTYLE</span>
                     </div>
                     <div class="content">
@@ -1113,7 +552,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="article-style-01">
                     <div class="thumb">
-                        {{Html::image("img/blog/beneficios.jpg", "")}}
+                        {{Html::image("/img/blog/beneficios.jpg", "")}}
                         <span class="tag tag-green">FASHION TRENS</span>
                     </div>
                     <div class="content">
@@ -1138,7 +577,7 @@
             <div class="row d-flex">
                 <div class="col-md-6">
                     <div class="thumb">
-                        {{Html::image("img/fashion/crop-patilla.jpg", "")}}
+                        {{Html::image("/img/fashion/crop-patilla.jpg", "")}}
                     </div>
                 </div>
                 <div class="col-md-6 align-self-center text-center">
@@ -1165,7 +604,7 @@
             <div class="row d-flex">
                 <div class="col-md-6">
                     <div class="thumb">
-                        {{Html::image("img/fashion/top-modelo.jpg", "")}}
+                        {{Html::image("/img/fashion/top-modelo.jpg", "")}}
                     </div>
                 </div>
                 <div class="col-md-6 align-self-center text-center">
@@ -1192,7 +631,7 @@
             <div class="row d-flex">
                 <div class="col-md-6">
                     <div class="thumb">
-                        {{Html::image("img/fashion/top-crazy.jpg", "")}}
+                        {{Html::image("/img/fashion/top-crazy.jpg", "")}}
                     </div>
                 </div>
                 <div class="col-md-6 align-self-center text-center">
@@ -1220,51 +659,7 @@
     </div>
 </div>
 
-<!-- brand-area start -->
-<div class="brand-area padding-top-30 padding-bottom-30">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="brand-slider border-bottom-0 padding-top-30">
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand1.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand2.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand3.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand4.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand5.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand6.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand1.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand2.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand3.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand4.png", "brand")}}
-                    </div>
-                    <div class="brant-item">
-                        {{Html::image("img/brand/brand5.png", "brand")}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- brand-area end -->
+
 
 <!-- contact area start  -->
 <div class="contact-area">
