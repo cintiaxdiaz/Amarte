@@ -290,7 +290,6 @@
     };
     var showModal = function () {
       drawTable();
-      $("#" + idCartModal).modal('show');
     };
     var updateCart = function () {
       $.each($("." + classProductQuantity), function () {
