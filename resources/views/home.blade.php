@@ -12,11 +12,11 @@
                 <!--portada principal -->
                 <div class="container-fluid px-5">
                     <div class="banner-content">
-                        <h3 class="subtitle" data-animation-in="fadeInLeft">FIND YOUR</h3>
-                        <h2 class="title" data-animation-in="fadeInRight">EVERYDAY FASHION</h2>
+                        <h3 class="subtitle" data-animation-in="fadeInLeft">ENCUENTRA TU</h3>
+                        <h2 class="subtitle" data-animation-in="fadeInRight">ESTILO</h2>
                         <div class="margin-top-50 pl-1">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-black" href="#">SHOP NOW</a>
+                                <a class="btn btn-black" href="/Productos/">COMPRAR AHORA</a>
                             </div>
                         </div>
                     </div>
@@ -30,10 +30,10 @@
                 <div class="container-fluid px-5">
                     <div class="banner-content">
                         <h3 class="subtitle" data-animation-in="fadeInLeft">30% OFF</h3>
-                        <h2 class="title" data-animation-in="fadeInRight">FAVOURITE CLOTHING</h2>
+                        <h2 class="title" data-animation-in="fadeInRight">ACCESORIO FAVORITO</h2>
                         <div class="margin-top-50 pl-1">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-black" href="#">GET COLLECTION</a>
+                                <a class="btn btn-black" href="/Productos/">COLECCIÓN</a>
                             </div>
                         </div>
                     </div>
@@ -56,10 +56,10 @@
                         {{Html::image("/img/collection/portada-women.jpg", "")}}
 
                         <div class="content">
-                            <h3>WOMEN'S</h3>
-                            <h6>Collection</h6>
+                            <h3>MUJER</h3>
+                            <h6>COLECCIÓN</h6>
                             <div class="btn-wrapper">
-                                <a href="#" class="btn btn-collection">Shop Now</a>
+                                <a href="/Productos/" class="btn btn-collection">COMPRAR AHORA</a>
                             </div>
                         </div>
                     </div>
@@ -70,10 +70,10 @@
                     <div class="thumb">
                         {{Html::image("/img/collection/portada-accessories.jpg", "")}}
                         <div class="content">
-                            <h3>ACCESSORIES</h3>
-                            <h6>Collection</h6>
+                            <h3>ACCESORIOS</h3>
+                            <h6>COLECCIÓN</h6>
                             <div class="btn-wrapper">
-                                <a href="#" class="btn btn-collection">Shop Now</a>
+                                <a href="/Productos/" class="btn btn-collection">COMPRAR AHORA</a>
                             </div>
                         </div>
                     </div>
@@ -85,9 +85,9 @@
                         {{Html::image("/img/collection/portada!!.jpg", "")}}<!--Portada mens -->
                         <div class="content">
                             <h3>CURSOS</h3>
-                            <h6>Collection</h6>
+                            <h6>COLECCIÓN</h6>
                             <div class="btn-wrapper">
-                                <a href="#" class="btn btn-collection">Shop Now</a>
+                                <a href="/Productos/" class="btn btn-collection">COMPRAR AHORA</a>
                             </div>
                         </div>
                     </div>
@@ -104,15 +104,15 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title-02 text-cent// portada new, women, mener">
-                    <h6>DISCOVER SOMETHING</h6>
-                    <h3>NEW ARRIVALS</h3>
+                    <h6>DESCUBRIR ALGO</h6>
+                    <h3>LO NUEVO</h3>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <ul class="nav nav-pills tranding-tab">
-                    <li class="mt-2"><a data-toggle="pill" href="#one" class="active">NEW IN</a></li>
+                    <li class="mt-2"><a data-toggle="pill" href="#one" class="active">LO MÁS NUEVO</a></li>
                     <!-- MENU DE WOMEN Y MENS-->
                     <!--<li class="mt-2"><a data-toggle="pill" href="#two">MEN</a></li>-->
                    <!-- <li class="mt-2"><a data-toggle="pill" href="#three">WOMEN</a></li>-->
@@ -129,16 +129,18 @@
                         <div class="product-style-02 margin-top-40">
                             <div class="thumb">
                                 {{Html::image("/img/tranding/portada-new.png", "")}}
-                                <span class="new">NEW</span>
+                                <span class="new">NUEVO</span>
 
 
                                 <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
+                                    <li><a href=""><i class="icon-heart"></i></a></li>
+                                    <li><a href=""><i class="icon-quick-view"></i></a></li>
                                 </ul>
                             </div>
+                                
                             <div class="content text-left">
-                                <span class="brand">BRAND:AMARTE</span>
+
+                                <span class="brand">MARCA:AMARTE</span>
                                 <ul class="justify-content-start margin-bottom-10">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -146,16 +148,17 @@
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                 </ul>
-                                <h6 class="title"><a href="#">Crop-Top Px4</a></h6>
+                                <h6 class="title"><a href="/singleProducto/1">Crop-Top Px4</a></h6>
+                                    
                                 <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
+                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
                                     <div class="content-price d-flex flex-column align-self-center">
                                         <span class="old-price">$18.000</span>
                                         <span class="new-price">$15.000</span>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -163,14 +166,14 @@
                         <div class="product-style-02 margin-top-40">
                             <div class="thumb">
                                 {{Html::image("/img/tranding/cartera-new-portada.png", "")}}
-                                <span class="new">NEW</span>
+                                <span class="new">NUEVO</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
                                     <li><a href="#"><i class="icon-quick-view"></i></a></li>
                                 </ul>
                             </div>
                             <div class="content text-left">
-                                <span class="brand">BRAND:AMARTE</span>
+                                <span class="brand">MARCA:AMARTE</span>
                                 <ul class="justify-content-start margin-bottom-10">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -180,8 +183,7 @@
                                 </ul>
                                 <h6 class="title"><a href="#">Cartera TR</a></h6>
                                 <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
+                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
                                     <div class="content-price d-flex flex-column align-self-center">
                                         <span class="old-price">$20.000</span>
@@ -202,7 +204,7 @@
                                 </ul>
                             </div>
                             <div class="content text-left">
-                                <span class="brand">BRAND:AMARTE</span>
+                                <span class="brand">MARCA:AMARTE</span>
                                 <ul class="justify-content-start margin-bottom-10">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -212,8 +214,7 @@
                                 </ul>
                                 <h6 class="title"><a href="#">Conjunto TS</a></h6>
                                 <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
+                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
                                     <div class="content-price d-flex flex-column align-self-center">
                                         <span class="old-price">$35.000</span>
@@ -227,14 +228,14 @@
                         <div class="product-style-02 margin-top-40">
                             <div class="thumb">
                                 {{Html::image("/img/tranding/croptop-sirena.jpg", "")}}
-                                <span class="out">SOLD OUT</span>
+                                <span class="out">LO MÁS VENDIDO</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
                                     <li><a href="#"><i class="icon-quick-view"></i></a></li>
                                 </ul>
                             </div>
                             <div class="content text-left">
-                                <span class="brand">BRAND:AMARTE</span>
+                                <span class="brand">MARCA:AMARTE</span>
                                 <ul class="justify-content-start margin-bottom-10">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -244,8 +245,7 @@
                                 </ul>
                                 <h6 class="title"><a href="#">Crop-Top Sirena</a></h6>
                                 <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
+                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
                                     <div class="content-price d-flex flex-column align-self-center">
                                         <span class="old-price">$25.000</span>
@@ -266,7 +266,7 @@
                                 </ul>
                             </div>
                             <div class="content text-left">
-                                <span class="brand">BRAND:AMARTE</span>
+                                <span class="brand">MARCA:AMARTE</span>
                                 <ul class="justify-content-start margin-bottom-10">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -276,8 +276,7 @@
                                 </ul>
                                 <h6 class="title"><a href="#">Cartera Flecos</a></h6>
                                 <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
+                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
                                     <div class="content-price d-flex flex-column align-self-center">
                                         <span class="old-price">$25.000</span>
@@ -292,14 +291,14 @@
                             <div class="thumb">
                                 {{Html::image("/img/tranding/top-crazy.jpg", "")}}
                                 <span class="sale">SALE 13%</span>
-                                <span class="new margin-top-35">NEW</span>
+                                <span class="new margin-top-35">NUEVO</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
                                     <li><a href="#"><i class="icon-quick-view"></i></a></li>
                                 </ul>
                             </div>
                             <div class="content text-left">
-                                <span class="brand">BRAND:AMARTE</span>
+                                <span class="brand">MARCA:AMARTE</span>
                                 <ul class="justify-content-start margin-bottom-10">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -309,8 +308,7 @@
                                 </ul>
                                 <h6 class="title"><a href="#">Crop-Top Crazy</a></h6>
                                 <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
+                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
                                     <div class="content-price d-flex flex-column align-self-center">
                                         <span class="old-price">$22.000</span>
@@ -337,11 +335,11 @@
                         <div class="thumb">
                             {{Html::image("/img/collection/top-sale.jpg", "")}}
                             <div class="thumb-content">
-                                <h4>MENS COLLECTION</h4>
+                                <h4>COLECCIÓN</h4>
                                 <h2>SALE</h2>
-                                <h3>FLAT 20%</h3>
+                                <h3>20%</h3>
                                 <div class="btn-wrapper">
-                                    <a href="#" class="btn btn-collection">SHOP NOW</a>
+                                    <a href="#" class="btn btn-collection">COMPRAR AHORA</a>
                                 </div>
                             </div>
                         </div>
@@ -350,11 +348,11 @@
                         <div class="thumb">
                             {{Html::image("/img/collection/trajes-sale.jpg", "")}}
                             <div class="thumb-content">
-                                <h4>TOP TENDING</h4>
+                                <h4>LO MÁS TOP</h4>
                                 <h2>40%</h2>
-                                <h3>OFF EVERYTHING</h3>
+                                <h3>EN TODO</h3>
                                 <div class="btn-wrapper">
-                                    <a href="#" class="btn btn-collection">SHOP NOW</a>
+                                    <a href="#" class="btn btn-collection">COMPRAR AHORA</a>
                                 </div>
                             </div>
                         </div>
@@ -398,18 +396,18 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title-02 text-center">
-                    <h6 class="mb-0">EVERYDAY ITEMS AND MORE</h6>
-                    <h3 class="mb-0">LATEST COLLECTION</h3>
+                    <h6 class="mb-0">ARTÍCULOS DIARIOS</h6>
+                    <h3 class="mb-0">ÚLTIMA COLECCIÓN</h3>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <ul class="nav nav-pills collection-tab mt-0">
-                    <li class="margin-top-20"><a data-toggle="pill" href="#hot" class="active">Hot Collection</a>
+                    <li class="margin-top-20"><a data-toggle="pill" href="#hot" class="active">Colección HOT</a>
                     </li>
-                    <li class="margin-top-20"><a data-toggle="pill" href="#best">Best Sellers</a></li>
-                    <li class="margin-top-20"><a data-toggle="pill" href="#sale">Sale Product</a></li>
+                    <li class="margin-top-20"><a data-toggle="pill" href="#best">Las más vendidas</a></li>
+                    <li class="margin-top-20"><a data-toggle="pill" href="#sale">Productos en oferta</a></li>
                 </ul>
             </div>
         </div>
@@ -420,19 +418,18 @@
                         <div class="product-style-04 margin-top-40">
                             <div class="thumb">
                                 {{Html::image("/img/arrival/Crochet-top.jpg", "")}}
-                                <span class="out">SOLD OUT</span>
+                                <span class="out">LO MÁS VENDIDO</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
                                     <li><a href="#"><i class="icon-quick-view"></i></a></li>
                                 </ul>
                             </div>
                             <div class="content text-left">
-                                <h6 class="title"><a href="#">Faxon Canvas Low-Top Sneaker</a></h6>
+                                <h6 class="title"><a href="#">xxxxxxxxx</a></h6>
                                 <div class="product-countdown clockdiv" data-countdown="2021/02/02">
                                 </div>
                                 <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
+                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i>Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
                                     <div class="content-price d-flex flex-column align-self-center">
                                         <span class="new-price">$16.000</span>
@@ -452,12 +449,11 @@
                                 </ul>
                             </div>
                             <div class="content text-left">
-                                <h6 class="title"><a href="#">Plaid Cotton Oxford Shirt</a></h6>
+                                <h6 class="title"><a href="#">xxxxxxxxxxxxx</a></h6>
                                 <div class="product-countdown clockdiv" data-countdown="2021/02/02">
                                 </div>
                                 <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
+                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
                                     <div class="content-price d-flex flex-column align-self-center">
                                         <span class="new-price">$19.000</span>
@@ -471,19 +467,18 @@
                             <div class="thumb">
                                 {{Html::image("/img/arrival/crop-chispa.jpg", "")}}
                                 <span class="sale">SALE 13%</span>
-                                <span class="new margin-top-35">NEW</span>
+                                <span class="new margin-top-35">NUEVO</span>
                                 <ul class="cart-action-02">
                                     <li><a href="#"><i class="icon-heart"></i></a></li>
                                     <li><a href="#"><i class="icon-quick-view"></i></a></li>
                                 </ul>
                             </div>
                             <div class="content text-left">
-                                <h6 class="title"><a href="#">Two-Tone Sleeveless Dress</a></h6>
+                                <h6 class="title"><a href="#">XXXXX</a></h6>
                                 <div class="product-countdown clockdiv" data-countdown="2021/02/02">
                                 </div>
                                 <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Add
-                                            to cart</a></div>
+                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
                                     <div class="content-price d-flex flex-column align-self-center">
                                         <span class="new-price">$22.000</span>
@@ -508,8 +503,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title-02 margin-bottom-30 text-center">
-                    <h6>FASHION FOR ALL</h6>
-                    <h3>LATEST BLOG</h3>
+                    <h6>MODA PARA TODAS</h6>
+                    <h3>LBLOG</h3>
                 </div>
             </div>
         </div>
@@ -518,7 +513,7 @@
                 <div class="article-style-01">
                     <div class="thumb">
                         {{Html::image("/img/blog/aprender.jpg", "")}}
-                        <span class="tag tag-green">MODAL</span>
+                        <span class="tag tag-green">MODA</span>
                     </div>
                     <div class="content">
                         <span class="date">Abril 27, 2021</span>
@@ -527,7 +522,7 @@
                             es fundamental a la hora de empezar a hacer ganchillo. Es importante conocer el grosor del hilo, lana o trapillo, 
                             normalmente viene especificado en las etiquetas de dichos productos, pero para que te puedas hacer una idea.</p>
                         <div class="btn-wrapper">
-                            <a href="#" class="btn">Read more</a>
+                            <a href="#" class="btn">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -536,7 +531,7 @@
                 <div class="article-style-01">
                     <div class="thumb">
                         {{Html::image("/img/blog/outfit.jpg", "")}}
-                        <span class="tag tag-green">LIFESTYLE</span>
+                        <span class="tag tag-green">ESTILO DE VIDA</span>
                     </div>
                     <div class="content">
                         <span class="date">Mayo 30, 2021</span>
@@ -544,7 +539,7 @@
                         <p>¿No sabes como crear outfit con tus piezas tejidas?
                             entonces estas el blog correcto...</p>
                         <div class="btn-wrapper">
-                            <a href="#" class="btn">Read more</a>
+                            <a href="#" class="btn">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -553,7 +548,7 @@
                 <div class="article-style-01">
                     <div class="thumb">
                         {{Html::image("/img/blog/beneficios.jpg", "")}}
-                        <span class="tag tag-green">FASHION TRENS</span>
+                        <span class="tag tag-green">TENDENCIAS DE LA MODA</span>
                     </div>
                     <div class="content">
                         <span class="date">June 24, 2020</span>
@@ -561,7 +556,7 @@
                         <p>Hay quien se entretiene realizando maquetas, pintando, haciendo fotografías, o tejiendo. La idea de que tejer es una práctica “de abuelas” 
                             ha pasado a la historia, ya que hoy en día constituye una actividad de ocio que se ha puesto de moda incluso entre los más jóvenes.</p>
                         <div class="btn-wrapper">
-                            <a href="#" class="btn">Read more</a>
+                            <a href="#" class="btn">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -582,8 +577,8 @@
                 </div>
                 <div class="col-md-6 align-self-center text-center">
                     <div class="content">
-                        <h6>EVERYDAY ITEMS AND MORE</h6>
-                        <h3>LATEST COLLECTION</h3>
+                        <h6>ARTÍCULOS DIARIOS</h6>
+                        <h3>ÚLTIMA COLECCIÓN</h3>
                         <p>The bay has a rich surfing history and some legendary waves. Camper vans and board short
                             wearing types line the seafront from dawn until dusk.</p>
                         <ul>
@@ -595,8 +590,7 @@
                         </ul>
                         <span class="price">$30.000</span>
                         <div class="btn-wrapper">
-                            <a href="#" class="btn btn-collection" tabindex="0"><i class="icon-add-to-cat"></i> ADD
-                                TO CART</a>
+                            <a href="#" class="btn btn-collection" tabindex="0"><i class="icon-add-to-cat"></i> Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -609,8 +603,8 @@
                 </div>
                 <div class="col-md-6 align-self-center text-center">
                     <div class="content">
-                        <h6>EVERYDAY ITEMS AND MORE</h6>
-                        <h3>LATEST COLLECTION</h3>
+                        <h6>ARTÍCULOS DIARIOS</h6>
+                        <h3>ÚLTIMA COLECCIÓN</h3>
                         <p>The bay has a rich surfing history and some legendary waves. Camper vans and board short
                             wearing types line the seafront from dawn until dusk.</p>
                         <ul>
@@ -622,8 +616,7 @@
                         </ul>
                         <span class="price">$26.000</span>
                         <div class="btn-wrapper">
-                            <a href="#" class="btn btn-collection" tabindex="0"><i class="icon-add-to-cat"></i> ADD
-                                TO CART</a>
+                            <a href="#" class="btn btn-collection" tabindex="0"><i class="icon-add-to-cat"></i> Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -636,8 +629,8 @@
                 </div>
                 <div class="col-md-6 align-self-center text-center">
                     <div class="content">
-                        <h6>EVERYDAY ITEMS AND MORE</h6>
-                        <h3>LATEST COLLECTION</h3>
+                        <h6>ARTÍCULOS DIARIOS</h6>
+                        <h3>ÚLTIMA COLECCIÓN</h3>
                         <p>The bay has a rich surfing history and some legendary waves. Camper vans and board short
                             wearing types line the seafront from dawn until dusk.</p>
                         <ul>
@@ -649,8 +642,7 @@
                         </ul>
                         <span class="price">$26.000</span>
                         <div class="btn-wrapper">
-                            <a href="#" class="btn btn-collection" tabindex="0"><i class="icon-add-to-cat"></i> ADD
-                                TO CART</a>
+                            <a href="#" class="btn btn-collection" tabindex="0"><i class="icon-add-to-cat"></i> Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
