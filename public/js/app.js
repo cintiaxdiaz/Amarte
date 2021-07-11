@@ -1,6 +1,5 @@
 function renderCart(products, totalPrice) {
   var cartUl = $('#my-cart-checkout-id');
-  console.log(cartUl);
   cartUl.empty();
   $.each(products, function (key, value) {
     var total = value.quantity * value.price;
@@ -55,3 +54,24 @@ $(function () {
     }
   });
 });
+
+$('.btn-clear.clear-cart').on('click', function () {
+  clearCart = confirm("¿Estás seguro de vaciar el carrito?");
+  if (clearCart) {
+    $('.my-cart-btn').myCart({
+      cartItems: []
+    })
+    $(location).attr('href', '/Home')
+  }
+})
+
+$('.my-product-remove.carrito').on('click', function() {
+  setTimeout(function() {
+    $('#carrito-form').submit();
+  }, 500);
+})
+$('.btn-buy.buy-now').on('click', function() { 
+  setTimeout(function() {
+    $('#carrito-form').submit();
+  }, 500);
+})

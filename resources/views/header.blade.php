@@ -174,11 +174,11 @@
                             </li>
                             <li class="has-dropdown">
                                 <a href="#"><i class="icon-add-to-cat"></i><span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></a>
-                                <form action="/carrito" method="POST">
+                                <form action="/carrito" method="POST" id="carrito-form">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                     <ul id="my-cart-checkout-id">
                                         <li>
-                                            <h6 class="tprice"><span>Total price: </span>$3210.00</h6>
+                                            <h6 class="tprice"><span>Total price: </span>$0</h6>
                                             <div class="btn-wrapper">
                                                 <input type="submit" class="btn btn-cart" value="Go to cart">
                                             </div>

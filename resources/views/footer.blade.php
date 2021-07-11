@@ -199,3 +199,4 @@
 {{Html::script('js/main.js')}}
 {{Html::script('js/jquery.mycart.js')}}
 {{Html::script('js/app.js')}}
+@yield('scripts')

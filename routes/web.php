@@ -33,34 +33,6 @@ Route::get('singleProducto/{id}', 'App\Http\Controllers\ProductosController@most
 
 Route::post('carrito', 'App\Http\Controllers\CarritoController@mostrarCarrito');
 
-/*
-Route::get('usuarios/{nombre}', function ($nombre) {
-    return 'los usuarios ' . $nombre;
+Route::get('/', function () {
+    return redirect('/Home');
 });
-//PASANDO POR EL PRIMER NOMNRE
-Route::get('carrito', function () {
-    $nombre = 'cintia';
-    return view('carrito', compact('nombre'));
-});*/
-
-//PASANDO CON SELECCION DE ID IDENTIICADO
-
-/*Route::get('producto', function () {
-    $product = App\Models\Producto::find(2);
-    echo $product->nombre;
-});
-
-//PASANDO POR URL
-
-Route::get('producto/{id}', function ($id) {
-    $product = App\Models\Producto::find($id);
-    echo $product->nombre;
-});
-//url 
-Route::get('producto_nombre', function () {
-    $product = App\Models\Producto::where('nombre', '=', 'bandana')->first();
-    echo $product->nombre;
-});*/
-
-
-//Route::get('carritos', 'App\Http\Controllers\CarritoController@mostrarCompras');
