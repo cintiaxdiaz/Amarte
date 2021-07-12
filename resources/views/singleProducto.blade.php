@@ -66,8 +66,8 @@
                                             </div>
                         
                                 </div>
-                                <div class="btn-wrapper">
-                                    <a href="#" class="btn btn-buy">COMPRAR AHORA</a>
+                                <div class="btn-wrapper my-cart-btn" data-id="{{$producto->id}}" data-name="{{$producto->nombre}}" data-summary="{{$producto->descripcion}}" data-price="{{$producto->precio}}" data-quantity="1" data-image='/img/productos/{{$producto->fotos[0]->url_foto}}'>
+                                    <a href="javascript:void(0)" class="btn btn-buy buy-now">COMPRAR AHORA</a>
                                 </div>
                                 <p class="specifications">CATEGORÍA: <b>Dama, accesorios.</b></p>
                                 <p class="specifications">MATERIALES: <b>{{$producto->material}}</b></p>

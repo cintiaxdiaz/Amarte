@@ -27,6 +27,9 @@
             <div class="row">
                 <div class="col-xl-9 col-lg-8">
                     <div class="cart-content margin-top-20">
+                        @if (!$productos)
+                        <h1>No tienes nada en el carrito.</h1>
+                        @else
                         <table class="table table-bordered table-responsive">
                             <thead>
                               <tr class="text-center">
@@ -34,12 +37,11 @@
                                 <th scope="col">Precio</th>
                                 <th scope="col">Cantidad</th>
                                 <th scope="col">Total</th>
-                                <th scope="col">Editar</th>
+                                <th scope="col">Eliminar</th>
                               </tr>
                             </thead>
                             <tbody>
                                 @foreach($productos as $producto)
-
                               <tr>
                                 <th scope="row" class="d-flex">
                                     <div class="left">
@@ -51,32 +53,36 @@
                                         <h6 class="title">Color: <span class="values">Brown</span></h6>
                                     </div>
                                 </th>
-                                <td>$29.00</td>
-                                <td><input type="text" value="1"></td>
-                                <td>$29.00</td>
+                                <td>${{$producto->precio}}</td>
                                 <td>
-                                    <div class="action">
-                                        <a href="#"><i class="fa fa-times"></i></a>
-                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                    <div data-id="{{$producto->id}}">
+                                        <input class="my-product-quantity" name="productos[][cantidad]" type="number" value="{{$diccionario_cantidades[$producto->id]}}" min="1">
+                                    </div>
+                                </td>
+                                <td>${{$producto->precio * $diccionario_cantidades[$producto->id]}}</td>
+                                <td>
+                                    <div class="action" data-id="{{$producto->id}}">
+                                        <a class="my-product-remove carrito" href="javascript:void(0)"><i class="fa fa-times"></i></a>
                                     </div>
                                 </td>
                               </tr>
-                              
                               @endforeach
-
                             </tbody>
                         </table>
+                        @endif
                         <div class="d-flex justify-content-between margin-top-30">
                             <div class="btn-wrapper">
                                 <a href="/Productos" class="btn btn-continue">Continuar comprando</a>
                             </div>
+                            @if ($productos)
                             <div class="btn-wrapper">
-                                <a href="#" class="btn btn-clear">Vaciar carro de compras</a>
+                                <a href="#" class="btn btn-clear clear-cart">Vaciar carro de compras</a>
                             </div>
+                            @endif
                         </div>
                     </div>
                 </div>
-                <di class="col-xl-3 col-lg-4">
+                <div class="col-xl-3 col-lg-4">
                     <div class="summary margin-top-20">
                         <h6 class="title">RESUMEN</h6>
                         <h6 class="subtitle">Envío estimado</h6>
@@ -139,7 +145,7 @@
                             <a href="#" class="btn btn-checkout">Ir a pagar</a>
                         </div>
                     </div>
-                </di>
+                </div>
             </div>
         </div>
     </div>
@@ -151,4 +157,13 @@
   
 
 </html>
+@endsection
+@section('scripts')
+<script>
+$('.my-product-quantity').change(function() {
+    setTimeout(function() {
+    $('#carrito-form').submit();
+  }, 500);
+})
+</script>
 @endsection
