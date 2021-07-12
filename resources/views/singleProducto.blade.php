@@ -59,16 +59,7 @@
                               
                                 <p class="specifications">{{$producto->descripcion}}</</p>
                                 <div class="btn-wrapper d-flex">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend align-self-center">
-                                            <a class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></a>
-                                        </div>
-                                        <input type="number" id="qty_input"
-                                            class="form-control text-right form-control-sm" value="1" min="1">
-                                        <div class="input-group-prepend align-self-center">
-                                            <a class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
+                                    
                                             <!--URL CARRITO-->
                                             <div class="add-to-cart my-cart-btn" data-id="{{$producto->id}}" data-name="{{$producto->nombre}}" data-summary="{{$producto->descripcion}}" data-price="{{$producto->precio}}" data-quantity="1" data-image='/img/productos/{{$producto->fotos[0]->url_foto}}'>
                                                 <a href="javascript:void(0)"><i class="icon-add-to-cat"></i> Agregar al carrito</a>

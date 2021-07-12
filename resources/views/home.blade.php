@@ -30,7 +30,7 @@
                 <div class="container-fluid px-5">
                     <div class="banner-content">
                         <h3 class="subtitle" data-animation-in="fadeInLeft">30% OFF</h3>
-                        <h2 class="title" data-animation-in="fadeInRight">ACCESORIO FAVORITO</h2>
+                        <h2 class="title" data-animation-in="fadeInRight">ACCESORIOS FAVORITOS</h2>
                         <div class="margin-top-50 pl-1">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
                                 <a class="btn btn-black" href="/Productos/">COLECCIÓN</a>
@@ -181,7 +181,7 @@
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                 </ul>
-                                <h6 class="title"><a href="#">Cartera TR</a></h6>
+                                <h6 class="title"><a href="/singleProducto/11">Cartera TR</a></h6>
                                 <div class="d-flex position-relative">
                                     <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
@@ -212,7 +212,7 @@
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                 </ul>
-                                <h6 class="title"><a href="#">Conjunto TS</a></h6>
+                                <h6 class="title"><a href="/singleProducto/12">Conjunto TS</a></h6>
                                 <div class="d-flex position-relative">
                                     <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
@@ -243,7 +243,7 @@
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                 </ul>
-                                <h6 class="title"><a href="#">Crop-Top Sirena</a></h6>
+                                <h6 class="title"><a href="/singleProducto/5">Crop-Top Sirena</a></h6>
                                 <div class="d-flex position-relative">
                                     <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
@@ -274,7 +274,7 @@
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                 </ul>
-                                <h6 class="title"><a href="#">Cartera Flecos</a></h6>
+                                <h6 class="title"><a href="/singleProducto/3">Cartera Flecos</a></h6>
                                 <div class="d-flex position-relative">
                                     <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
@@ -306,7 +306,7 @@
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star-o"></i></a></li>
                                 </ul>
-                                <h6 class="title"><a href="#">Crop-Top Crazy</a></h6>
+                                <h6 class="title"><a href="/singleProducto/13">Crop-Top Crazy</a></h6>
                                 <div class="d-flex position-relative">
                                     <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
                                     <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
@@ -390,111 +390,6 @@
 </div>
 <!-- collection section end  -->
 
-<!-- arrivals area start  -->
-<div class="arrivals-area margin-top-70">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title-02 text-center">
-                    <h6 class="mb-0">ARTÍCULOS DIARIOS</h6>
-                    <h3 class="mb-0">ÚLTIMA COLECCIÓN</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="nav nav-pills collection-tab mt-0">
-                    <li class="margin-top-20"><a data-toggle="pill" href="#hot" class="active">Colección HOT</a>
-                    </li>
-                    <li class="margin-top-20"><a data-toggle="pill" href="#best">Las más vendidas</a></li>
-                    <li class="margin-top-20"><a data-toggle="pill" href="#sale">Productos en oferta</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-content">
-            <div class="tab-pane fade in show active" id="hot">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-04 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("/img/arrival/Crochet-top.jpg", "")}}
-                                <span class="out">LO MÁS VENDIDO</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <h6 class="title"><a href="#">xxxxxxxxx</a></h6>
-                                <div class="product-countdown clockdiv" data-countdown="2021/02/02">
-                                </div>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i>Agregar al carrito</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="new-price">$16.000</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-04 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("/img/arrival/crop-gris.jpg", "")}}
-                                <span class="sale">SALE 13%</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <h6 class="title"><a href="#">xxxxxxxxxxxxx</a></h6>
-                                <div class="product-countdown clockdiv" data-countdown="2021/02/02">
-                                </div>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="new-price">$19.000</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="product-style-04 margin-top-40">
-                            <div class="thumb">
-                                {{Html::image("/img/arrival/crop-chispa.jpg", "")}}
-                                <span class="sale">SALE 13%</span>
-                                <span class="new margin-top-35">NUEVO</span>
-                                <ul class="cart-action-02">
-                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                    <li><a href="#"><i class="icon-quick-view"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="content text-left">
-                                <h6 class="title"><a href="#">XXXXX</a></h6>
-                                <div class="product-countdown clockdiv" data-countdown="2021/02/02">
-                                </div>
-                                <div class="d-flex position-relative">
-                                    <div class="content-hover-cart"><a href="#"><i class="icon-add-to-cat"></i> Agregar al carrito</a></div>
-                                    <div class="content-cart"><a href="#"><i class="icon-add-to-cat"></i></a></div>
-                                    <div class="content-price d-flex flex-column align-self-center">
-                                        <span class="new-price">$22.000</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </div>
-    </div>
-</div>
-<!-- arrivals area end  -->
 
 
 <!-- article area start  -->
