@@ -104,7 +104,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title-02 text-cent// portada new, women, mener">
-                    <h6>DESCUBRIR ALGO</h6>
+                    <h6></h6>
                     <h3>LO NUEVO</h3>
                 </div>
             </div>
@@ -339,7 +339,7 @@
                                 <h2>SALE</h2>
                                 <h3>20%</h3>
                                 <div class="btn-wrapper">
-                                    <a href="#" class="btn btn-collection">COMPRAR AHORA</a>
+                                    <a href="/Productos/" class="btn btn-collection">COMPRAR AHORA</a>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +352,7 @@
                                 <h2>40%</h2>
                                 <h3>EN TODO</h3>
                                 <div class="btn-wrapper">
-                                    <a href="#" class="btn btn-collection">COMPRAR AHORA</a>
+                                    <a href="/Productos/" class="btn btn-collection">COMPRAR AHORA</a>
                                 </div>
                             </div>
                         </div>
@@ -399,7 +399,7 @@
             <div class="col-lg-12">
                 <div class="section-title-02 margin-bottom-30 text-center">
                     <h6>MODA PARA TODAS</h6>
-                    <h3>LBLOG</h3>
+                    <h3>BLOG</h3>
                 </div>
             </div>
         </div>

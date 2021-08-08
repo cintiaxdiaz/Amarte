@@ -33,6 +33,12 @@ Route::get('singleProducto/{id}', 'App\Http\Controllers\ProductosController@most
 
 Route::post('carrito', 'App\Http\Controllers\CarritoController@mostrarCarrito');
 
+Route::get('Contacto', 'App\Http\Controllers\ContactoController@mostrarContacto');
+
+Route::post('compra', 'App\Http\Controllers\CarritoController@realizarCompra');
+
+
+
 Route::get('/', function () {
     return redirect('/Home');
 });

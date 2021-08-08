@@ -3,10 +3,12 @@
 namespace App\Models;
 
 
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ProductoFoto extends Model
+class CompraProducto extends Model
 {
-    protected $table = 'producto_foto';
+    public $timestamps = false;
+    protected $table = 'compra_producto';
 }

@@ -29,11 +29,11 @@
             {{Html::image("/img/logo.png", "")}}
         </div>
         <div class="sidemenu-text">
-            <p>We believe brand interaction is key in commu- nication. Real inno vations and a positive customer
-                experience are the heart of successful commu- nication.</p>
+            <p>Creemos que la interacción de la marca es clave en la comunicación. Innovaciones reales y un cliente positivo
+                la experiencia son el corazón de una comunicación exitosa.</p>
         </div>
         <div class="sidebar-contact">
-            <h4>Contact Us</h4>
+            <h4>Contácto</h4>
             <ul>
                 <li><i class="fa fa-map-marker"></i>Santiago, Chile</li>
                 <li><i class="fa fa-envelope"></i>amartecrea@gmail.com</li>
@@ -84,33 +84,12 @@
                             <li>
                                 <div class="select-menu">
                                     <select class="menu-select">
-                                        <option>English</option>
-                                        <option>Espanol</option>
+                                        <option>Español</option>
                                     </select>
                                     <i class="fa fa-chevron-down"></i>
                                 </div>
                             </li>
-                            <li>
-                                <div class="select-menu">
-                                    <select class="menu-select">
-                                        <option>USD</option>
-                                        <option>GBP</option>
-                                        <option>AUD</option>
-                                        <option>CAD</option>
-                                    </select>
-                                    <i class="fa fa-chevron-down"></i>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon-user"></i></a>
-                                <ul class="user-dropdown">
-                                    <li><a href="#">Sign In | Join</a></li>
-                                    <li><a href="#"><i class="icon-user"></i> My Account</a></li>
-                                    <li><a href="#"><i class="fa fa-briefcase"></i> My Orders</a></li>
-                                    <li><a href="#"><i class="fa fa-reply"></i> Returns Information</a></li>
-                                    <li><a href="#"><i class="fa fa-commenting-o"></i> Contact Preferences</a></li>
-                                </ul>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -139,27 +118,22 @@
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="#">Shop <i class="fa fa-angle-down"></i></a>
+                                <a href="#">COMPRAR <i class="fa fa-angle-down"></i></a>
                                 <ul class="sub-menu">
                                     <!--<li><a href="collection.html">Shop Grid</a></li>-->
-                                    <li><a href="/Productos">Shop List</a></li>
+                                    <li><a href="/Productos/">Productos</a></li>
                                    <!-- <li><a href="collection-full.html">Shop Full</a></li>-->
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                                <a href="#">PÁGINAS <i class="fa fa-angle-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                    <li><a href="single-product.html">Single Product</a></li>
-                                    <li><a href="shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="error.html">Error</a></li>
-                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                    <li><a href="/blog/">Blog</a></li>
+                                    <li><a href="/carrito/">Carrito</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="about.html">Sobre nosotros</a></li>
+                            <li><a href="/Contacto/">Contácto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -178,7 +152,7 @@
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                     <ul id="my-cart-checkout-id">
                                         <li>
-                                            <h6 class="tprice"><span>Total price: </span>$0</h6>
+                                            <h6 class="tprice"><span>Total precio: </span>$0</h6>
                                             <div class="btn-wrapper">
                                                 <input type="submit" class="btn btn-cart" value="Go to cart">
                                             </div>
