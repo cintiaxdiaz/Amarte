@@ -148,7 +148,7 @@
                             </li>
                             <li class="has-dropdown">
                                 <a href="#"><i class="icon-add-to-cat"></i><span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></a>
-                                <form action="/carrito" method="POST" id="carrito-form">
+                                <form action="/compra" method="POST" id="carrito-form">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                     <ul id="my-cart-checkout-id">
                                         <li>
