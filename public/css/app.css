@@ -162,3 +162,36 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 136px;
     margin-left:0px;
 }
+
+.nav-right-part ul .has-dropdown:hover{
+    color:#ff0b91 !important;
+}
+
+.nav-style-01 .nav-container .navbar-collapse .navbar-nav > li:hover > a, .nav-style-01 .nav-container .navbar-collapse .navbar-nav > li:hover:before {
+    color: #ff0b91 !important;
+}
+
+.article-style-01 .content h3:hover a {
+    color: #ff0b91;
+}
+
+.nav-right-part ul li:hover a i:before {
+    color: #ff0b91;
+}
+
+.nav-right-part ul .has-dropdown ul .title a:hover {
+    color: #BC01A6;
+}
+
+.nav-right-part ul .has-dropdown ul .btn-cart:hover {
+    background: #ff0b91;
+    color: #fff;
+}
+
+.navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a:hover {
+    color: #BC01A6;
+}
+
+.footer-area .footer-top .widget.widget_nav_menu ul li:hover a {
+    color: #ff0b91;
+}

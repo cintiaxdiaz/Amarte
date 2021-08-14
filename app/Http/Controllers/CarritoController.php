@@ -35,7 +35,6 @@ class CarritoController extends Controller
     }
 
     public function realizarCompra(Request $request)
-
     {
         $list_id = [];
         $diccionario_grande = $request->all();
