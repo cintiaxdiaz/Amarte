@@ -37,6 +37,9 @@ Route::get('Contacto', 'App\Http\Controllers\ContactoController@mostrarContacto'
 
 Route::post('compra', 'App\Http\Controllers\CarritoController@realizarCompra');
 
+Route::get('pagoExitoso/{id}', 'App\Http\Controllers\PagoController@mostrarPagoExitoso');
+
+
 
 
 Route::get('/', function () {

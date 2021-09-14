@@ -11,9 +11,29 @@ class ProductosController extends Controller
 {
 
 
-    public function mostrarProductos()
+    public function mostrarProductos(Request $request)
     {
-        $productos = Producto::all();
+
+        $query = Producto::query();
+        $stringCategoria = $request->get('categorias');
+        if ($stringCategoria) {
+            $categorias = explode(',', $stringCategoria);
+            $query = $query->whereIn('categoria_id', $categorias);
+        }
+
+        $minPrecio = $request->get('minprecio');
+
+        if ($minPrecio && is_numeric($minPrecio)) {
+            $query = $query->where('precio', '>', $minPrecio);
+        }
+
+        $maxPrecio = $request->get('maxprecio');
+
+        if ($maxPrecio && is_numeric($maxPrecio)) {
+            $query = $query->where('precio', '<', $maxPrecio);
+        }
+
+        $productos = $query->get();
 
         return view('productos', compact('productos'));
     }

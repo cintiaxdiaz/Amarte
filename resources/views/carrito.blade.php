@@ -96,13 +96,25 @@
                     </div>
                     <div class="col-xl-3 col-lg-4">
                         <div class="summary margin-top-20">
-                            <h6 class="title">RESUMEN</h6>
-                            <h6 class="subtitle">Envío estimado</h6>
-                            <p class="destination">Ingrese su destino para obtener un precio estimado de envío.</p>
-                            <form action="#">
+                                <h6 class="title">RESUMEN</h6>
                                 <div class="form-group">
+                                    <label>RUT</label>
+                                    <input name="rut"type="text" placeholder="12345678-9" required>
+                                    <label>Nombre</label>
+                                    <input name="nombre"type="text" required>
+                                    <label>Teléfono</label>
+                                    <input name="telefono"type="text"  placeholder="+56 9 8760 6734" required>
+                                    <label>Correo eléctronico</label>
+                                    <input name="correo"type="text" required>
+                               
+                                </div>
+                                <h6 class="subtitle">Envío estimado</h6>
+                                <p class="destination">Ingrese su destino para obtener un precio estimado de envío.</p>
+                            
+                                <div class="form-group">
+
                                     <label>Región</label>
-                                    <select class="form-control cart-select">
+                                    <select name="region" class="form-control cart-select" required>
                                         <option>Regíon Metropolitana de Santiago</option>
                                         <option>XV Región de Arica y Parinacota</option>
                                         <option>I Region de Tarapacá</option>
@@ -122,7 +134,7 @@
                                     <i class="fa fa-chevron-down"></i>
                                 </div>
                                 <div class="form-group">
-                                    <label>Código postal</label>
+                                    <label>Dirección</label>
                                     <input name="direccion"type="text">
                                 </div>
                             
@@ -138,11 +150,7 @@
                                     <p>Total a pagar</p>
                                     <p>${{$total + 10000}}</p>
                                 </div>
-                                <div class="form-group margin-top-20">
-                                    <label>Aplicar código de descuento</label>
-                                    <input type="text" placeholder="Introduzca el código">
-                                </div>
-                            </form> 
+                
                             <div class="btn-wrapper">
                                 <input type="submit" value="Ir a pagar" class="btn btn-checkout"/>
                             </div>

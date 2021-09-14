@@ -35,6 +35,7 @@ class CarritoController extends Controller
     }
 
     public function realizarCompra(Request $request)
+
     {
         $list_id = [];
         $diccionario_grande = $request->all();
@@ -50,14 +51,15 @@ class CarritoController extends Controller
         $productos = Producto::whereIn('id', $list_id)->get();
 
         $comprar = new Compra;
-        $comprar->nombre = "cintia";
-        $comprar->rut = "265688578";
-        $comprar->direccion = "santiago";
-        $comprar->telefono = "+56987015736";
-        $comprar->correo = "cin@gmail.com";
-        $comprar->subtotal = 0;
+        $comprar->nombre = $diccionario_grande['nombre'];
+        $comprar->rut = $diccionario_grande['rut'];
+        $comprar->direccion = $diccionario_grande['direccion'];
+        $comprar->telefono = $diccionario_grande['telefono'];
+        $comprar->correo = $diccionario_grande['correo'];
+        $comprar->region = $diccionario_grande['region'];
+
         $comprar->costo_envio = 10000;
-        $comprar->total = 0;
+
         $lista_compraProducto = [];
 
         foreach ($productos as $producto) {
