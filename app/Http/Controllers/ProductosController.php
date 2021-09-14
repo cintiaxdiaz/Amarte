@@ -33,6 +33,13 @@ class ProductosController extends Controller
             $query = $query->where('precio', '<', $maxPrecio);
         }
 
+        $nombreProducto = $request->get('nombreproducto');
+
+        if ($nombreProducto) {
+            $query = $query->where('nombre', 'like', '%' . $nombreProducto . '%');
+        }
+
+
         $productos = $query->get();
 
         return view('productos', compact('productos'));
