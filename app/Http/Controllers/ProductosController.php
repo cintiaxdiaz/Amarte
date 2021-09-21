@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categorias;
 use Illuminate\Http\Request;
 use resources\views\home;
 use App\Models\Producto;
@@ -12,11 +13,12 @@ class ProductosController extends Controller
     public function mostrarProductos(Request $request)
     {
         $query = Producto::query();
+
         $stringCategoria = $request->get('categorias');
-        $categoriasQuery = [];
+        $categoriasUrl = [];
         if ($stringCategoria) {
-            $categoriasQuery = explode(',', $stringCategoria);
-            $query = $query->whereIn('categoria_id', $categoriasQuery);
+            $categoriasUrl = explode(',', $stringCategoria);
+            $query = $query->whereIn('categoria_id', $categoriasUrl);
         }
 
         $minPrecio = $request->get('minprecio');
@@ -38,8 +40,10 @@ class ProductosController extends Controller
         }
 
         $productos = $query->get();
+        $categoriaBbdd = Categorias::all();
 
-        return view('productos', compact('productos', 'nombreProducto', 'categoriasQuery'));
+
+        return view('productos', compact('productos', 'nombreProducto', 'categoriasUrl', 'categoriaBbdd'));
     }
 
     public function mostrarsingleProducto($id)

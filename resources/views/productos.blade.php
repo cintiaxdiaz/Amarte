@@ -152,52 +152,22 @@
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <p class="mb-0">
+                                        
                                         <a href="#" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Categoría</a>
                                     </p>
                                 </div>
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample1">
                                     <div class="card-body">
                                         <form action="#">
+                                            @foreach($categoriaBbdd as $categoria)
+
                                             <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input" value="1">
-                                              <label class="custom-control-label" for="customCheck">Backpacks [124]</label>
+                                              <input type="checkbox" class="custom-control-input" value="{{$categoria->id}}" <?= in_array(strval($categoria->id), $categoriasUrl) ? 'checked':'' ?>>
+                                              <label class="custom-control-label" for="customCheck">{{$categoria->descripcion}}</label>
                                             </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input" value="2">
-                                              <label class="custom-control-label" for="customCheck2">Bags [293]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input" value="3">
-                                              <label class="custom-control-label" for="customCheck3">Boots [125]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input" value="4">
-                                              <label class="custom-control-label" for="customCheck4">Coats [698]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="customCheck5">Dresses [12456]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="customCheck6">Flats [2654]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="customCheck7">Heels [29]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="customCheck8">Jackets [1136]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="customCheck9">Jeans [2987]</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <label class="custom-control-label" for="customCheck10">Jewellery [536]</label>
-                                            </div>
+
+                                            @endforeach
+
                                         </form>
                                     </div>
                                 </div>
