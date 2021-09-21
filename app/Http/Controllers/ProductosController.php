@@ -9,16 +9,14 @@ use App\Models\Producto;
 
 class ProductosController extends Controller
 {
-
-
     public function mostrarProductos(Request $request)
     {
-
         $query = Producto::query();
         $stringCategoria = $request->get('categorias');
+        $categoriasQuery = [];
         if ($stringCategoria) {
-            $categorias = explode(',', $stringCategoria);
-            $query = $query->whereIn('categoria_id', $categorias);
+            $categoriasQuery = explode(',', $stringCategoria);
+            $query = $query->whereIn('categoria_id', $categoriasQuery);
         }
 
         $minPrecio = $request->get('minprecio');
@@ -39,10 +37,9 @@ class ProductosController extends Controller
             $query = $query->where('nombre', 'like', '%' . $nombreProducto . '%');
         }
 
-
         $productos = $query->get();
 
-        return view('productos', compact('productos'));
+        return view('productos', compact('productos', 'nombreProducto', 'categoriasQuery'));
     }
 
     public function mostrarsingleProducto($id)

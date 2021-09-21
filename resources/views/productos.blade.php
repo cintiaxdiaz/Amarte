@@ -141,9 +141,9 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12 margin-top-20">
                     <div class="widget search-widget">
-                        <form action="#">
+                        <form action="#" id="buscaProducto">
                             <button type="submit"><i class="icon-search"></i></button>
-                            <input type="text" placeholder="Search brand" name="search">
+                            <input type="text" placeholder="Search brand" id="nombreProducto" value="{{$nombreProducto}}">
                         </form>
                     </div>
                     <!-- MENU POR CATEGORIAS!-->
@@ -159,19 +159,19 @@
                                     <div class="card-body">
                                         <form action="#">
                                             <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
+                                              <input type="checkbox" class="custom-control-input" value="1">
                                               <label class="custom-control-label" for="customCheck">Backpacks [124]</label>
                                             </div>
                                             <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
+                                              <input type="checkbox" class="custom-control-input" value="2">
                                               <label class="custom-control-label" for="customCheck2">Bags [293]</label>
                                             </div>
                                             <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
+                                              <input type="checkbox" class="custom-control-input" value="3">
                                               <label class="custom-control-label" for="customCheck3">Boots [125]</label>
                                             </div>
                                             <div class="custom-control custom-checkbox mb-3">
-                                              <input type="checkbox" class="custom-control-input">
+                                              <input type="checkbox" class="custom-control-input" value="4">
                                               <label class="custom-control-label" for="customCheck4">Coats [698]</label>
                                             </div>
                                             <div class="custom-control custom-checkbox mb-3">

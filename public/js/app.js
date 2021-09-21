@@ -75,3 +75,44 @@ $('.btn-buy.buy-now').on('click', function() {
     $('#carrito-form').submit();
   }, 500);
 })
+
+function actualizarProductos() {
+  var url = window.location.href.split('?')[0] + '?';
+  categorias = ''
+  $('.custom-checkbox input').each(function() {
+    if ($(this).prop('checked')) {
+      categorias += $(this).val() + ','
+    }
+  })
+  categorias = categorias.slice(0, -1)
+  if (categorias) {
+    url += 'categorias=' + categorias + '&'
+  }
+
+  nombreProducto = $('#nombreProducto').val()
+  if (nombreProducto) {
+    url += 'nombreproducto=' + nombreProducto + '&'
+  }
+
+  minPrecio = $( "#slider-range" ).slider( "values", 0 )
+  if (minPrecio) {
+    url += 'minprecio=' + minPrecio + '&'
+  }
+
+  maxPrecio= $( "#slider-range" ).slider( "values", 1 )
+  if (maxPrecio){
+    url += 'maxprecio=' + maxPrecio 
+  }
+  window.location.href = url;
+}
+
+$('.custom-checkbox').on('click', function() {
+  checkbox = $(this).children('input')[0]
+  $(checkbox).prop('checked', !$(checkbox).prop('checked'))
+  actualizarProductos()
+})
+
+$('#buscaProducto').on('submit', function(event) {
+  actualizarProductos()
+  event.preventDefault();
+})
