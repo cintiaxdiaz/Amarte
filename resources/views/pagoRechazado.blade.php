@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'pagoExitoso')
+@section('title', 'pagoRechazado')
 @section('content')
 
 
@@ -20,8 +20,8 @@
         </div>
     </div>
     <!-- breadcrumb end  -->
-    <div class="alert alert-success" role="alert">
-        Pago exitoso, se ha enviado un correo!
+    <div class="alert alert-danger" role="alert">
+        Pago fallido!
       </div>
     <!-- cart area start  -->
     <div class="cart-area margin-top-60">
@@ -62,9 +62,9 @@
                                 @endforeach
                             </tbody>
                         </table>
-                        <div class="d-flex justify-content-between margin-top-30">
+                        <div class="btnVolver d-flex justify-content-between margin-top-30">
                             <div class="btn-wrapper">
-                                <a href="/Productos" class="btn btn-continue">Continuar comprando</a>
+                                <a href="#" class="btn btn-continue btn-buy buy-now">Volver a intentar</a>
                             </div>
                             
                         </div>

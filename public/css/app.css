@@ -195,3 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-area .footer-top .widget.widget_nav_menu ul li:hover a {
     color: #ff0b91;
 }
+.btnVolver {
+    margin: auto;
+    width: 10%;
+}

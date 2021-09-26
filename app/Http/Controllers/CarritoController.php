@@ -97,8 +97,8 @@ class CarritoController extends Controller
                 'quantity' => 1,
             ]],
             'mode' => 'payment',
-            'success_url' => 'http://127.0.0.1:8000/Home',
-            'cancel_url' => 'http://127.0.0.1:8000/Home',
+            'success_url' => 'http://127.0.0.1:8000/pagoExitoso/' . $comprar->id,
+            'cancel_url' => 'http://127.0.0.1:8000/pagoRechazado/' . $comprar->id,
         ]);
 
         return redirect($session->url);

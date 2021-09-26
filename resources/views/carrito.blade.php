@@ -58,10 +58,8 @@
                                             {{Html::image("/img/productos/" . $producto->fotos[0]->url_foto, "")}}
                                             </div>
                                             <div class="right">
-                                                <h6 class="name">Men's Crew T-shirt</h6>
-                                                <h6 class="title">Size: <span class="values">XL</span></h6>
-                                                <h6 class="title">Color: <span class="values">Brown</span></h6>
-                                            </div>
+                                                <h6 class="name">{{$producto->nombre}}</h6>
+                                                <h6 class="title">Descripción: <span class="values">{{$producto->descripcion}}</span></h6>                                            </div>
                                         </th>
                                         <td>${{$producto->precio}}</td>
                                         <td>
