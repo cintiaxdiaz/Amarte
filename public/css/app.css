@@ -199,3 +199,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     width: 10%;
 }
+.rut-valida {
+    display: none;
+    color: rgb(255, 0, 0);
+}
+
+.product-style-03 .thumb .cart-action li:hover i:before {
+    color: #ff0b91;
+}
+
+.back-to-top i {
+    color: #ff0b91;
+}

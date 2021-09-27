@@ -34,7 +34,7 @@ function renderCart(products, totalPrice) {
 }
 
 $(function () {
-  var cart = $('.my-cart-btn').myCart({
+  $('.my-cart-btn').myCart({
     classCartIcon: 'my-cart-icon',
     classCartBadge: 'my-cart-badge',
     affixCartIcon: true,
@@ -107,12 +107,43 @@ function actualizarProductos() {
 }
 
 $('.custom-checkbox').on('click', function () {
-  checkbox = $(this).children('input')[0]
-  $(checkbox).prop('checked', !$(checkbox).prop('checked'))
-  actualizarProductos()
+  checkbox = $(this).children('input')[0];
+  $(checkbox).prop('checked', !$(checkbox).prop('checked'));
+  actualizarProductos();
 })
 
 $('#buscaProducto').on('submit', function (event) {
-  actualizarProductos()
+  actualizarProductos();
   event.preventDefault();
+})
+
+function validaRut(rutCompleto) {
+  if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test( rutCompleto )) {
+    return false;
+  }
+  var tmp = rutCompleto.split('-');
+  var digv = tmp[1]; 
+  var rut = parseInt(tmp[0], 10);
+  if (digv == 'K') {
+    digv = 'k';
+  }
+  return (digitoVerificador(rut) == digv);
+}
+
+function digitoVerificador(rut) {
+  var M=0,S=1;
+  for(;rut;rut=Math.floor(rut/10)) {
+    S=(S+rut%10*(9-M++%6))%11;
+  }
+  return S?S-1:'k';
+}
+
+$('#compra-form').on('submit', function(event) {
+  rut = $('#inputRut').val();
+  if (!validaRut(rut)) {
+    $('.rut-valida').css( "display", "block" );
+    event.preventDefault();
+    return
+  }
+  $('.rut-valida').css( "display", "none" );
 })

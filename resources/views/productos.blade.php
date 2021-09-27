@@ -61,7 +61,7 @@
                                             </a>
 
                                             <ul class="cart-action">
-                                                <li><a href="#"><i class="icon-add-to-cat"></i></a></li>
+                                                <li><a onclick='return false;' href="#"><i class="icon-add-to-cat add-to-cart my-cart-btn" data-id="{{$producto->id}}" data-name="{{$producto->nombre}}" data-summary="{{$producto->descripcion}}" data-price="{{$producto->precio}}" data-quantity="1" data-image='/img/productos/{{$producto->fotos[0]->url_foto}}'></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="content text-center">

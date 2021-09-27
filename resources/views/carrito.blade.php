@@ -24,7 +24,7 @@
     <!-- cart area start  -->
     <div class="cart-area margin-top-60">
         <div class="container">
-            <form action="/compra" method="POST" id="carrito-form">            
+            <form action="/compra" method="POST" id="compra-form">            
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                 <div class="row">
                     <div class="col-xl-9 col-lg-8">
@@ -92,12 +92,16 @@
                             </div>
                         </div>
                     </div>
+                    @if ($productos)
                     <div class="col-xl-3 col-lg-4">
                         <div class="summary margin-top-20">
                                 <h6 class="title">RESUMEN</h6>
                                 <div class="form-group">
                                     <label>RUT</label>
-                                    <input name="rut"type="text" placeholder="12345678-9" required>
+                                    <input name="rut"type="text" placeholder="12345678-9" id="inputRut" required>
+                                    <small class="rut-valida">
+                                        Rut invlido
+                                    </small>
                                     <label>Nombre</label>
                                     <input name="nombre"type="text" required>
                                     <label>Teléfono</label>
@@ -154,6 +158,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                 </div>
             </form>
         </div>

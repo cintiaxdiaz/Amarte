@@ -84,10 +84,8 @@
 @endsection
 @section('scripts')
 <script>
-$('.my-product-quantity').change(function() {
-    setTimeout(function() {
-    $('#carrito-form').submit();
-  }, 500);
-})
+$('.my-cart-btn').myCart({
+    cartItems: []
+});
 </script>
 @endsection
