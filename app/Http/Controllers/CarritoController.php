@@ -9,9 +9,6 @@ use App\Models\CompraProducto;
 use Stripe\Stripe;
 use Stripe\Checkout\Session;
 
-
-
-
 class CarritoController extends Controller
 {
     public function mostrarCarrito(Request $request)
@@ -37,33 +34,26 @@ class CarritoController extends Controller
     public function realizarCompra(Request $request)
 
     {
-        $list_id = [];
-        $diccionario_grande = $request->all();
-        $diccionario_cantidades = [];
+        $listaDeid = [];
+        $productosEinformaciones = $request->all(); //asigna una variable al formulario
+        $diccionario_cantidades = []; // cantidad de cada producto
         $productos = [];
 
-        foreach ($diccionario_grande['productos'] as $diccionario) {
-            //agrega
-            array_push($list_id, $diccionario['id']);
-            $diccionario_cantidades[$diccionario['id']] = $diccionario['cantidad'];
+        foreach ($productosEinformaciones['productos'] as $productoDeformulario) { //productos del formulario, lo asigna a 
+            //diccionario
+            //agrega a la lista los id del formulario
+            array_push($listaDeid, $productoDeformulario['id']);
+            $diccionario_cantidades[$productoDeformulario['id']] = $productoDeformulario['cantidad'];
         }
+        //pasa los a id del formulario a la bbdd (query), obtiene datos de los productos
 
-        $productos = Producto::whereIn('id', $list_id)->get();
-
+        $productos = Producto::whereIn('id', $listaDeid)->get();
+        //asigna variable a una nuev compra y se obtienen los datos solicitados del formulario
         $comprar = new Compra;
-        $comprar->nombre = $diccionario_grande['nombre'];
-        $comprar->rut = $diccionario_grande['rut'];
-        $comprar->direccion = $diccionario_grande['direccion'];
-        $comprar->telefono = $diccionario_grande['telefono'];
-        $comprar->correo = $diccionario_grande['correo'];
-        $comprar->region = $diccionario_grande['region'];
-
-        $comprar->costo_envio = 10000;
-
         $lista_compraProducto = [];
 
+        //se asigna una variable a una nueva compra producto
         foreach ($productos as $producto) {
-
             $compraProduct = new CompraProducto;
             $compraProduct->producto_id = $producto->id;
             $compraProduct->precio = $producto->precio;
@@ -71,17 +61,24 @@ class CarritoController extends Controller
             $compraProduct->cantidad = $diccionario_cantidades[$producto->id];
             $comprar->subtotal = $comprar->subtotal + $producto->precio * $compraProduct->cantidad;
 
-
+            //agrega compra product a la lista
             array_push($lista_compraProducto, $compraProduct);
         }
+
+        $comprar->nombre = $productosEinformaciones['nombre'];
+        $comprar->rut = $productosEinformaciones['rut'];
+        $comprar->direccion = $productosEinformaciones['direccion'];
+        $comprar->telefono = $productosEinformaciones['telefono'];
+        $comprar->correo = $productosEinformaciones['correo'];
+        $comprar->region = $productosEinformaciones['region'];
+
+        $comprar->costo_envio = 10000;
+
         $comprar->total = $comprar->subtotal + $comprar->costo_envio;
-
         $comprar->save();
-
+        //guarda compra en table compra produtos y que guarde todo lo que esta en la lista
         $comprar->compraProductos()->saveMany($lista_compraProducto);
-
-
-
+        //integracion con stripe // codigo de seguridad asignado por stripe
         Stripe::setApiKey('sk_test_51JMJp6FJ4vqwVcqEeVNo9dH3pwEYAk3erOEr6KDkxKgkGiPWnG4vQZxvuH6YMvgmyLwXPeOO8b5FQDZm4FkQB71x00PMLaqjsR');
 
         $session = Session::create([
@@ -97,34 +94,11 @@ class CarritoController extends Controller
                 'quantity' => 1,
             ]],
             'mode' => 'payment',
+            //cocatena con el id de la compra
             'success_url' => 'http://127.0.0.1:8000/pagoExitoso/' . $comprar->id,
             'cancel_url' => 'http://127.0.0.1:8000/pagoRechazado/' . $comprar->id,
         ]);
 
         return redirect($session->url);
-
-
-
-
-
-        $comprar = new Compra;
-        $comprar->nombre = "cintia";
-        $comprar->rut = "265688578";
-        $comprar->direccion = "santiago";
-        $comprar->telefono = "+56987015736";
-        $comprar->correo = "cin@gmail.com";
-        $comprar->subtotal = 15990;
-        $comprar->costo_envio = 10000;
-        $comprar->total = 25990;
-
-        $producto1 = new CompraProducto;
-        $producto1->producto_id    = 2;
-        $producto1->precio = 25000;
-        $producto1->sku    = "ctr";
-
-        $producto2 = new CompraProducto;
-        $producto2->producto_id    = 3;
-        $producto2->precio = 25020;
-        $producto2->sku    = "ctr1";
     }
 }
